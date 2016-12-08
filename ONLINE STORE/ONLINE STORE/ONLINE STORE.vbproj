@@ -79,6 +79,15 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="form selamat datang.Designer.vb">
+      <DependentUpon>form selamat datang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form selamat datang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="formStore.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -127,6 +136,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="form selamat datang.resx">
+      <DependentUpon>form selamat datang.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>formStore.vb</DependentUpon>
     </EmbeddedResource>
