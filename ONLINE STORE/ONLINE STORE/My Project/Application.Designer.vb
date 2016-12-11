@@ -27,12 +27,23 @@ Namespace My
             Me.IsSingleInstance = false
             Me.EnableVisualStyles = true
             Me.SaveMySettingsOnExit = true
-            Me.ShutDownStyle = Global.Microsoft.VisualBasic.ApplicationServices.ShutdownMode.AfterMainFormCloses
+            Me.ShutdownStyle = Global.Microsoft.VisualBasic.ApplicationServices.ShutdownMode.AfterMainFormCloses
         End Sub
-        
-        <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
-        Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = Global.ONLINE_STORE.formStore
-        End Sub
+<<<<<<< HEAD
     End Class
 End Namespace
+
+
+<Global.System.Diagnostics.DebuggerStepThroughAttribute()> _
+Protected Overrides Sub OnCreateMainForm()
+<<<<<<< HEAD
+            Me.MainForm = Global.ONLINE_STORE.formawal
+=======
+=======
+
+        <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
+        Protected Overrides Sub OnCreateMainForm()
+>>>>>>> 0873d9b693484fbd22b895a3eb598550dd7588a4
+    Me.MainForm = Global.ONLINE_STORE.formStore
+End Sub
+
