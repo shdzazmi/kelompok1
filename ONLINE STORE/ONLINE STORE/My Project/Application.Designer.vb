@@ -32,11 +32,7 @@ Namespace My
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
         Protected Overrides Sub OnCreateMainForm()
-<<<<<<< HEAD
-            Me.MainForm = Global.ONLINE_STORE.formawal
-=======
             Me.MainForm = Global.ONLINE_STORE.formStore
->>>>>>> f003fb8be5413e976ffdd20efe222ed21d992823
         End Sub
     End Class
 End Namespace
