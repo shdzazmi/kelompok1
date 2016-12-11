@@ -8,7 +8,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{EE2D29B3-B7A4-4251-9E68-008D51FA1D34}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>ONLINE_STORE.My.MyApplication</StartupObject>
+    <StartupObject>ONLINE_STORE.formawal</StartupObject>
     <RootNamespace>ONLINE_STORE</RootNamespace>
     <AssemblyName>ONLINE STORE</AssemblyName>
     <FileAlignment>512</FileAlignment>

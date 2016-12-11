@@ -5,4 +5,8 @@
         formStore.Show()
         formStore.Enabled = True
     End Sub
+
+    Private Sub formKeranjang_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class
