@@ -143,6 +143,9 @@
     <EmbeddedResource Include="formDatabase.resx">
       <DependentUpon>formDatabase.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="formStore.resx">
+      <DependentUpon>formStore.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LOGIN.resx">
       <DependentUpon>LOGIN.vb</DependentUpon>
     </EmbeddedResource>
