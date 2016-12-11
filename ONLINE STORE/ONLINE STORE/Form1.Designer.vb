@@ -228,7 +228,6 @@ Partial Class formStore
         '
         'formStore
         '
-        Me.BackColor = System.Drawing.SystemColors.Control
         Me.ClientSize = New System.Drawing.Size(920, 513)
         Me.Controls.Add(Me.keranjangButton)
         Me.Controls.Add(Me.exitButton)

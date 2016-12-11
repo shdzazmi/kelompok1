@@ -48,9 +48,6 @@
   <PropertyGroup>
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
-  <PropertyGroup>
-    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
-  </PropertyGroup>
   <ItemGroup>
     <Reference Include="DevExpress.Data.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Printing.v15.2.Core, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
@@ -82,12 +79,6 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="formawal.Designer.vb">
-      <DependentUpon>formawal.vb</DependentUpon>
-    </Compile>
-    <Compile Include="formawal.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="formStore.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -113,7 +104,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
     </Compile>
-    <Compile Include="My Project\form_selamat_datang.vb" />
     <Compile Include="My Project\Resources.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -140,14 +130,8 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>formStore.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="formawal.resx">
-      <DependentUpon>formawal.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="formDatabase.resx">
       <DependentUpon>formDatabase.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="formStore.resx">
-      <DependentUpon>formStore.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LOGIN.resx">
       <DependentUpon>LOGIN.vb</DependentUpon>
@@ -169,7 +153,6 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="My Project\app.manifest" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
