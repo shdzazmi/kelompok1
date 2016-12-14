@@ -6,7 +6,7 @@
         formStore.Enabled = True
     End Sub
 
-    Private Sub PembelianBindingNavigatorSaveItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PembelianBindingNavigatorSaveItem.Click
+    Private Sub PembelianBindingNavigatorSaveItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Me.Validate()
         Me.PembelianBindingSource.EndEdit()
         Me.TableAdapterManager.UpdateAll(Me.OnlinesotreDataSet)

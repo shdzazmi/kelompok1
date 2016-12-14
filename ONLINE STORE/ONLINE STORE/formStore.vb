@@ -110,7 +110,7 @@
         MessageBox.Show("Barang Berhasil Ditambah")
     End Sub
 
-    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         MessageBox.Show("Barang Berhasil Ditambah")
     End Sub
 End Class
