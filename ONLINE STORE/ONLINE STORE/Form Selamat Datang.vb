@@ -2,13 +2,11 @@
 
     Private Sub lanjutButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles lanjutButton.Click
         Me.Hide()
-        fadeout()
-        formStore.ShowDialog()
+        formStore.Show()
     End Sub
 
     Private Sub batalButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles batalButton.Click
-        Me.Close()
-        fadeout()
+        Application.Exit()
     End Sub
 
     Private Sub Label2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label2.Click
@@ -16,5 +14,9 @@
     End Sub
 
     Private Sub lanjutButton_ForeColorChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles lanjutButton.ForeColorChanged
+    End Sub
+
+    Private Sub Form_Selamat_Datang_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+
     End Sub
 End Class

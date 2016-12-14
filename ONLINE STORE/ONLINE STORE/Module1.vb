@@ -2,7 +2,7 @@
     Public Sub FadeIn()
         Dim fade As Double
         For fade = 0.0 To 1.1 Step 0.2
-            formStore.opacity = fade
+            formStore.Opacity = fade
             formStore.refresh()
             Threading.Thread.sleep(100)
         Next

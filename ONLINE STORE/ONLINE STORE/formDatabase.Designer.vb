@@ -250,7 +250,7 @@ Partial Class formDatabase
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(258, 44)
+        Me.Label6.Location = New System.Drawing.Point(323, 43)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(100, 18)
         Me.Label6.TabIndex = 11
@@ -260,7 +260,7 @@ Partial Class formDatabase
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Century Gothic", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(254, 9)
+        Me.Label5.Location = New System.Drawing.Point(319, 8)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(112, 42)
         Me.Label5.TabIndex = 10
@@ -270,7 +270,7 @@ Partial Class formDatabase
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(254, 62)
+        Me.Label1.Location = New System.Drawing.Point(319, 61)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(111, 18)
         Me.Label1.TabIndex = 12
@@ -563,6 +563,7 @@ Partial Class formDatabase
         Me.Controls.Add(Me.Label5)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Name = "formDatabase"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = " "
         CType(Me.exitButton, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.OnlinesotreDataSet, System.ComponentModel.ISupportInitialize).EndInit()

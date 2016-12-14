@@ -74,7 +74,7 @@
 
     Private Sub exitButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles exitButton.Click
         fadeout()
-        Me.Close()
+        Application.Exit()
     End Sub
 
     Private Sub minimizeButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles minimizeButton.Click
