@@ -22,4 +22,5 @@
         Me.PembelianTableAdapter.Fill(Me.OnlinesotreDataSet.pembelian)
 
     End Sub
+
 End Class

@@ -23,21 +23,6 @@ Partial Class formDatabase
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim IdPembelianLabel As System.Windows.Forms.Label
-        Dim TanggalLabel As System.Windows.Forms.Label
-        Dim User_userLabel As System.Windows.Forms.Label
-        Dim Produk_idProdukLabel As System.Windows.Forms.Label
-        Dim NamaLabel As System.Windows.Forms.Label
-        Dim WarnaLabel As System.Windows.Forms.Label
-        Dim UkuranLabel As System.Windows.Forms.Label
-        Dim HargaLabel As System.Windows.Forms.Label
-        Dim JumlahLabel As System.Windows.Forms.Label
-        Dim Total_hargaLabel As System.Windows.Forms.Label
-        Dim IdProdukLabel As System.Windows.Forms.Label
-        Dim NamaLabel1 As System.Windows.Forms.Label
-        Dim HargaLabel1 As System.Windows.Forms.Label
-        Dim UkuranLabel1 As System.Windows.Forms.Label
-        Dim WarnaLabel1 As System.Windows.Forms.Label
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -48,203 +33,36 @@ Partial Class formDatabase
         Me.TableAdapterManager = New ONLINE_STORE.onlinesotreDataSetTableAdapters.TableAdapterManager()
         Me.ProdukTableAdapter = New ONLINE_STORE.onlinesotreDataSetTableAdapters.produkTableAdapter()
         Me.UserTableAdapter = New ONLINE_STORE.onlinesotreDataSetTableAdapters.userTableAdapter()
-        Me.IdPembelianTextEdit = New DevExpress.XtraEditors.TextEdit()
-        Me.TanggalDateEdit = New DevExpress.XtraEditors.DateEdit()
-        Me.User_userTextEdit = New DevExpress.XtraEditors.TextEdit()
-        Me.Produk_idProdukTextEdit = New DevExpress.XtraEditors.TextEdit()
-        Me.NamaTextEdit = New DevExpress.XtraEditors.TextEdit()
-        Me.WarnaTextEdit = New DevExpress.XtraEditors.TextEdit()
-        Me.UkuranTextEdit = New DevExpress.XtraEditors.TextEdit()
-        Me.HargaSpinEdit = New DevExpress.XtraEditors.SpinEdit()
-        Me.JumlahSpinEdit = New DevExpress.XtraEditors.SpinEdit()
-        Me.Total_hargaSpinEdit = New DevExpress.XtraEditors.SpinEdit()
-        Me.Label2 = New System.Windows.Forms.Label()
         Me.ProdukBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.IdProdukTextEdit = New DevExpress.XtraEditors.TextEdit()
-        Me.NamaTextEdit1 = New DevExpress.XtraEditors.TextEdit()
-        Me.HargaSpinEdit1 = New DevExpress.XtraEditors.SpinEdit()
-        Me.UkuranTextEdit1 = New DevExpress.XtraEditors.TextEdit()
-        Me.WarnaTextEdit1 = New DevExpress.XtraEditors.TextEdit()
-        Me.Label3 = New System.Windows.Forms.Label()
         Me.UserBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.Label4 = New System.Windows.Forms.Label()
         Me.UserDataGridView = New System.Windows.Forms.DataGridView()
         Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        IdPembelianLabel = New System.Windows.Forms.Label()
-        TanggalLabel = New System.Windows.Forms.Label()
-        User_userLabel = New System.Windows.Forms.Label()
-        Produk_idProdukLabel = New System.Windows.Forms.Label()
-        NamaLabel = New System.Windows.Forms.Label()
-        WarnaLabel = New System.Windows.Forms.Label()
-        UkuranLabel = New System.Windows.Forms.Label()
-        HargaLabel = New System.Windows.Forms.Label()
-        JumlahLabel = New System.Windows.Forms.Label()
-        Total_hargaLabel = New System.Windows.Forms.Label()
-        IdProdukLabel = New System.Windows.Forms.Label()
-        NamaLabel1 = New System.Windows.Forms.Label()
-        HargaLabel1 = New System.Windows.Forms.Label()
-        UkuranLabel1 = New System.Windows.Forms.Label()
-        WarnaLabel1 = New System.Windows.Forms.Label()
+        Me.ProdukDataGridView = New System.Windows.Forms.DataGridView()
+        Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.editButton1 = New System.Windows.Forms.Button()
+        Me.simpanButton1 = New System.Windows.Forms.Button()
+        Me.refreshButton1 = New System.Windows.Forms.Button()
+        Me.refreshButton2 = New System.Windows.Forms.Button()
+        Me.simpanButton2 = New System.Windows.Forms.Button()
+        Me.editButton2 = New System.Windows.Forms.Button()
         CType(Me.exitButton, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.OnlinesotreDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PembelianBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.IdPembelianTextEdit.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TanggalDateEdit.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TanggalDateEdit.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.User_userTextEdit.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Produk_idProdukTextEdit.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NamaTextEdit.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.WarnaTextEdit.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.UkuranTextEdit.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.HargaSpinEdit.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.JumlahSpinEdit.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Total_hargaSpinEdit.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ProdukBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.IdProdukTextEdit.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NamaTextEdit1.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.HargaSpinEdit1.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.UkuranTextEdit1.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.WarnaTextEdit1.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.UserBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.UserDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ProdukDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox1.SuspendLayout()
+        Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
-        '
-        'IdPembelianLabel
-        '
-        IdPembelianLabel.AutoSize = True
-        IdPembelianLabel.Location = New System.Drawing.Point(12, 112)
-        IdPembelianLabel.Name = "IdPembelianLabel"
-        IdPembelianLabel.Size = New System.Drawing.Size(70, 13)
-        IdPembelianLabel.TabIndex = 17
-        IdPembelianLabel.Text = "id Pembelian:"
-        '
-        'TanggalLabel
-        '
-        TanggalLabel.AutoSize = True
-        TanggalLabel.Location = New System.Drawing.Point(12, 138)
-        TanggalLabel.Name = "TanggalLabel"
-        TanggalLabel.Size = New System.Drawing.Size(45, 13)
-        TanggalLabel.TabIndex = 19
-        TanggalLabel.Text = "tanggal:"
-        '
-        'User_userLabel
-        '
-        User_userLabel.AutoSize = True
-        User_userLabel.Location = New System.Drawing.Point(12, 164)
-        User_userLabel.Name = "User_userLabel"
-        User_userLabel.Size = New System.Drawing.Size(53, 13)
-        User_userLabel.TabIndex = 21
-        User_userLabel.Text = "user user:"
-        '
-        'Produk_idProdukLabel
-        '
-        Produk_idProdukLabel.AutoSize = True
-        Produk_idProdukLabel.Location = New System.Drawing.Point(12, 190)
-        Produk_idProdukLabel.Name = "Produk_idProdukLabel"
-        Produk_idProdukLabel.Size = New System.Drawing.Size(91, 13)
-        Produk_idProdukLabel.TabIndex = 23
-        Produk_idProdukLabel.Text = "produk id Produk:"
-        '
-        'NamaLabel
-        '
-        NamaLabel.AutoSize = True
-        NamaLabel.Location = New System.Drawing.Point(12, 216)
-        NamaLabel.Name = "NamaLabel"
-        NamaLabel.Size = New System.Drawing.Size(36, 13)
-        NamaLabel.TabIndex = 25
-        NamaLabel.Text = "nama:"
-        '
-        'WarnaLabel
-        '
-        WarnaLabel.AutoSize = True
-        WarnaLabel.Location = New System.Drawing.Point(12, 242)
-        WarnaLabel.Name = "WarnaLabel"
-        WarnaLabel.Size = New System.Drawing.Size(39, 13)
-        WarnaLabel.TabIndex = 27
-        WarnaLabel.Text = "warna:"
-        '
-        'UkuranLabel
-        '
-        UkuranLabel.AutoSize = True
-        UkuranLabel.Location = New System.Drawing.Point(12, 268)
-        UkuranLabel.Name = "UkuranLabel"
-        UkuranLabel.Size = New System.Drawing.Size(43, 13)
-        UkuranLabel.TabIndex = 29
-        UkuranLabel.Text = "ukuran:"
-        '
-        'HargaLabel
-        '
-        HargaLabel.AutoSize = True
-        HargaLabel.Location = New System.Drawing.Point(12, 294)
-        HargaLabel.Name = "HargaLabel"
-        HargaLabel.Size = New System.Drawing.Size(37, 13)
-        HargaLabel.TabIndex = 31
-        HargaLabel.Text = "harga:"
-        '
-        'JumlahLabel
-        '
-        JumlahLabel.AutoSize = True
-        JumlahLabel.Location = New System.Drawing.Point(12, 320)
-        JumlahLabel.Name = "JumlahLabel"
-        JumlahLabel.Size = New System.Drawing.Size(40, 13)
-        JumlahLabel.TabIndex = 33
-        JumlahLabel.Text = "jumlah:"
-        '
-        'Total_hargaLabel
-        '
-        Total_hargaLabel.AutoSize = True
-        Total_hargaLabel.Location = New System.Drawing.Point(12, 346)
-        Total_hargaLabel.Name = "Total_hargaLabel"
-        Total_hargaLabel.Size = New System.Drawing.Size(60, 13)
-        Total_hargaLabel.TabIndex = 35
-        Total_hargaLabel.Text = "total harga:"
-        '
-        'IdProdukLabel
-        '
-        IdProdukLabel.AutoSize = True
-        IdProdukLabel.Location = New System.Drawing.Point(240, 168)
-        IdProdukLabel.Name = "IdProdukLabel"
-        IdProdukLabel.Size = New System.Drawing.Size(55, 13)
-        IdProdukLabel.TabIndex = 37
-        IdProdukLabel.Text = "id Produk:"
-        '
-        'NamaLabel1
-        '
-        NamaLabel1.AutoSize = True
-        NamaLabel1.Location = New System.Drawing.Point(240, 194)
-        NamaLabel1.Name = "NamaLabel1"
-        NamaLabel1.Size = New System.Drawing.Size(36, 13)
-        NamaLabel1.TabIndex = 39
-        NamaLabel1.Text = "nama:"
-        '
-        'HargaLabel1
-        '
-        HargaLabel1.AutoSize = True
-        HargaLabel1.Location = New System.Drawing.Point(240, 220)
-        HargaLabel1.Name = "HargaLabel1"
-        HargaLabel1.Size = New System.Drawing.Size(37, 13)
-        HargaLabel1.TabIndex = 41
-        HargaLabel1.Text = "harga:"
-        '
-        'UkuranLabel1
-        '
-        UkuranLabel1.AutoSize = True
-        UkuranLabel1.Location = New System.Drawing.Point(240, 246)
-        UkuranLabel1.Name = "UkuranLabel1"
-        UkuranLabel1.Size = New System.Drawing.Size(43, 13)
-        UkuranLabel1.TabIndex = 43
-        UkuranLabel1.Text = "ukuran:"
-        '
-        'WarnaLabel1
-        '
-        WarnaLabel1.AutoSize = True
-        WarnaLabel1.Location = New System.Drawing.Point(240, 272)
-        WarnaLabel1.Name = "WarnaLabel1"
-        WarnaLabel1.Size = New System.Drawing.Size(39, 13)
-        WarnaLabel1.TabIndex = 45
-        WarnaLabel1.Text = "warna:"
         '
         'Label6
         '
@@ -317,176 +135,15 @@ Partial Class formDatabase
         '
         Me.UserTableAdapter.ClearBeforeFill = True
         '
-        'IdPembelianTextEdit
-        '
-        Me.IdPembelianTextEdit.DataBindings.Add(New System.Windows.Forms.Binding("EditValue", Me.PembelianBindingSource, "idPembelian", True))
-        Me.IdPembelianTextEdit.Location = New System.Drawing.Point(109, 109)
-        Me.IdPembelianTextEdit.Name = "IdPembelianTextEdit"
-        Me.IdPembelianTextEdit.Size = New System.Drawing.Size(100, 20)
-        Me.IdPembelianTextEdit.TabIndex = 18
-        '
-        'TanggalDateEdit
-        '
-        Me.TanggalDateEdit.DataBindings.Add(New System.Windows.Forms.Binding("EditValue", Me.PembelianBindingSource, "tanggal", True))
-        Me.TanggalDateEdit.EditValue = Nothing
-        Me.TanggalDateEdit.Location = New System.Drawing.Point(109, 135)
-        Me.TanggalDateEdit.Name = "TanggalDateEdit"
-        Me.TanggalDateEdit.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-        Me.TanggalDateEdit.Properties.CalendarTimeProperties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-        Me.TanggalDateEdit.Size = New System.Drawing.Size(100, 20)
-        Me.TanggalDateEdit.TabIndex = 20
-        '
-        'User_userTextEdit
-        '
-        Me.User_userTextEdit.DataBindings.Add(New System.Windows.Forms.Binding("EditValue", Me.PembelianBindingSource, "user_user", True))
-        Me.User_userTextEdit.Location = New System.Drawing.Point(109, 161)
-        Me.User_userTextEdit.Name = "User_userTextEdit"
-        Me.User_userTextEdit.Size = New System.Drawing.Size(100, 20)
-        Me.User_userTextEdit.TabIndex = 22
-        '
-        'Produk_idProdukTextEdit
-        '
-        Me.Produk_idProdukTextEdit.DataBindings.Add(New System.Windows.Forms.Binding("EditValue", Me.PembelianBindingSource, "produk_idProduk", True))
-        Me.Produk_idProdukTextEdit.Location = New System.Drawing.Point(109, 187)
-        Me.Produk_idProdukTextEdit.Name = "Produk_idProdukTextEdit"
-        Me.Produk_idProdukTextEdit.Size = New System.Drawing.Size(100, 20)
-        Me.Produk_idProdukTextEdit.TabIndex = 24
-        '
-        'NamaTextEdit
-        '
-        Me.NamaTextEdit.DataBindings.Add(New System.Windows.Forms.Binding("EditValue", Me.PembelianBindingSource, "nama", True))
-        Me.NamaTextEdit.Location = New System.Drawing.Point(109, 213)
-        Me.NamaTextEdit.Name = "NamaTextEdit"
-        Me.NamaTextEdit.Size = New System.Drawing.Size(100, 20)
-        Me.NamaTextEdit.TabIndex = 26
-        '
-        'WarnaTextEdit
-        '
-        Me.WarnaTextEdit.DataBindings.Add(New System.Windows.Forms.Binding("EditValue", Me.PembelianBindingSource, "warna", True))
-        Me.WarnaTextEdit.Location = New System.Drawing.Point(109, 239)
-        Me.WarnaTextEdit.Name = "WarnaTextEdit"
-        Me.WarnaTextEdit.Size = New System.Drawing.Size(100, 20)
-        Me.WarnaTextEdit.TabIndex = 28
-        '
-        'UkuranTextEdit
-        '
-        Me.UkuranTextEdit.DataBindings.Add(New System.Windows.Forms.Binding("EditValue", Me.PembelianBindingSource, "ukuran", True))
-        Me.UkuranTextEdit.Location = New System.Drawing.Point(109, 265)
-        Me.UkuranTextEdit.Name = "UkuranTextEdit"
-        Me.UkuranTextEdit.Size = New System.Drawing.Size(100, 20)
-        Me.UkuranTextEdit.TabIndex = 30
-        '
-        'HargaSpinEdit
-        '
-        Me.HargaSpinEdit.DataBindings.Add(New System.Windows.Forms.Binding("EditValue", Me.PembelianBindingSource, "harga", True))
-        Me.HargaSpinEdit.EditValue = New Decimal(New Integer() {0, 0, 0, 0})
-        Me.HargaSpinEdit.Location = New System.Drawing.Point(109, 291)
-        Me.HargaSpinEdit.Name = "HargaSpinEdit"
-        Me.HargaSpinEdit.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-        Me.HargaSpinEdit.Size = New System.Drawing.Size(100, 20)
-        Me.HargaSpinEdit.TabIndex = 32
-        '
-        'JumlahSpinEdit
-        '
-        Me.JumlahSpinEdit.DataBindings.Add(New System.Windows.Forms.Binding("EditValue", Me.PembelianBindingSource, "jumlah", True))
-        Me.JumlahSpinEdit.EditValue = New Decimal(New Integer() {0, 0, 0, 0})
-        Me.JumlahSpinEdit.Location = New System.Drawing.Point(109, 317)
-        Me.JumlahSpinEdit.Name = "JumlahSpinEdit"
-        Me.JumlahSpinEdit.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-        Me.JumlahSpinEdit.Size = New System.Drawing.Size(100, 20)
-        Me.JumlahSpinEdit.TabIndex = 34
-        '
-        'Total_hargaSpinEdit
-        '
-        Me.Total_hargaSpinEdit.DataBindings.Add(New System.Windows.Forms.Binding("EditValue", Me.PembelianBindingSource, "total_harga", True))
-        Me.Total_hargaSpinEdit.EditValue = New Decimal(New Integer() {0, 0, 0, 0})
-        Me.Total_hargaSpinEdit.Location = New System.Drawing.Point(109, 343)
-        Me.Total_hargaSpinEdit.Name = "Total_hargaSpinEdit"
-        Me.Total_hargaSpinEdit.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-        Me.Total_hargaSpinEdit.Size = New System.Drawing.Size(100, 20)
-        Me.Total_hargaSpinEdit.TabIndex = 36
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(12, 74)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(94, 19)
-        Me.Label2.TabIndex = 37
-        Me.Label2.Text = "Pembelian"
-        '
         'ProdukBindingSource
         '
         Me.ProdukBindingSource.DataMember = "produk"
         Me.ProdukBindingSource.DataSource = Me.OnlinesotreDataSet
         '
-        'IdProdukTextEdit
-        '
-        Me.IdProdukTextEdit.DataBindings.Add(New System.Windows.Forms.Binding("EditValue", Me.ProdukBindingSource, "idProduk", True))
-        Me.IdProdukTextEdit.Location = New System.Drawing.Point(301, 165)
-        Me.IdProdukTextEdit.Name = "IdProdukTextEdit"
-        Me.IdProdukTextEdit.Size = New System.Drawing.Size(100, 20)
-        Me.IdProdukTextEdit.TabIndex = 38
-        '
-        'NamaTextEdit1
-        '
-        Me.NamaTextEdit1.DataBindings.Add(New System.Windows.Forms.Binding("EditValue", Me.ProdukBindingSource, "nama", True))
-        Me.NamaTextEdit1.Location = New System.Drawing.Point(301, 191)
-        Me.NamaTextEdit1.Name = "NamaTextEdit1"
-        Me.NamaTextEdit1.Size = New System.Drawing.Size(100, 20)
-        Me.NamaTextEdit1.TabIndex = 40
-        '
-        'HargaSpinEdit1
-        '
-        Me.HargaSpinEdit1.DataBindings.Add(New System.Windows.Forms.Binding("EditValue", Me.ProdukBindingSource, "harga", True))
-        Me.HargaSpinEdit1.EditValue = New Decimal(New Integer() {0, 0, 0, 0})
-        Me.HargaSpinEdit1.Location = New System.Drawing.Point(301, 217)
-        Me.HargaSpinEdit1.Name = "HargaSpinEdit1"
-        Me.HargaSpinEdit1.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-        Me.HargaSpinEdit1.Size = New System.Drawing.Size(100, 20)
-        Me.HargaSpinEdit1.TabIndex = 42
-        '
-        'UkuranTextEdit1
-        '
-        Me.UkuranTextEdit1.DataBindings.Add(New System.Windows.Forms.Binding("EditValue", Me.ProdukBindingSource, "ukuran", True))
-        Me.UkuranTextEdit1.Location = New System.Drawing.Point(301, 243)
-        Me.UkuranTextEdit1.Name = "UkuranTextEdit1"
-        Me.UkuranTextEdit1.Size = New System.Drawing.Size(100, 20)
-        Me.UkuranTextEdit1.TabIndex = 44
-        '
-        'WarnaTextEdit1
-        '
-        Me.WarnaTextEdit1.DataBindings.Add(New System.Windows.Forms.Binding("EditValue", Me.ProdukBindingSource, "warna", True))
-        Me.WarnaTextEdit1.Location = New System.Drawing.Point(301, 269)
-        Me.WarnaTextEdit1.Name = "WarnaTextEdit1"
-        Me.WarnaTextEdit1.Size = New System.Drawing.Size(100, 20)
-        Me.WarnaTextEdit1.TabIndex = 46
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(243, 137)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(65, 20)
-        Me.Label3.TabIndex = 47
-        Me.Label3.Text = "Produk"
-        '
         'UserBindingSource
         '
         Me.UserBindingSource.DataMember = "user"
         Me.UserBindingSource.DataSource = Me.OnlinesotreDataSet
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(436, 138)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(47, 20)
-        Me.Label4.TabIndex = 53
-        Me.Label4.Text = "User"
         '
         'UserDataGridView
         '
@@ -494,73 +151,164 @@ Partial Class formDatabase
         Me.UserDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.UserDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3})
         Me.UserDataGridView.DataSource = Me.UserBindingSource
-        Me.UserDataGridView.Location = New System.Drawing.Point(421, 161)
+        Me.UserDataGridView.Location = New System.Drawing.Point(21, 30)
         Me.UserDataGridView.Name = "UserDataGridView"
-        Me.UserDataGridView.Size = New System.Drawing.Size(300, 220)
+        Me.UserDataGridView.Size = New System.Drawing.Size(326, 220)
         Me.UserDataGridView.TabIndex = 53
         '
         'DataGridViewTextBoxColumn1
         '
         Me.DataGridViewTextBoxColumn1.DataPropertyName = "user"
-        Me.DataGridViewTextBoxColumn1.HeaderText = "user"
+        Me.DataGridViewTextBoxColumn1.HeaderText = "USER"
         Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
         '
         'DataGridViewTextBoxColumn2
         '
         Me.DataGridViewTextBoxColumn2.DataPropertyName = "password"
-        Me.DataGridViewTextBoxColumn2.HeaderText = "password"
+        Me.DataGridViewTextBoxColumn2.HeaderText = "PASSWORD"
         Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
         '
         'DataGridViewTextBoxColumn3
         '
         Me.DataGridViewTextBoxColumn3.DataPropertyName = "noHape"
-        Me.DataGridViewTextBoxColumn3.HeaderText = "noHape"
+        Me.DataGridViewTextBoxColumn3.HeaderText = "NO HP"
         Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
+        '
+        'ProdukDataGridView
+        '
+        Me.ProdukDataGridView.AutoGenerateColumns = False
+        Me.ProdukDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.ProdukDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn7, Me.DataGridViewTextBoxColumn8})
+        Me.ProdukDataGridView.DataSource = Me.ProdukBindingSource
+        Me.ProdukDataGridView.Location = New System.Drawing.Point(19, 30)
+        Me.ProdukDataGridView.Name = "ProdukDataGridView"
+        Me.ProdukDataGridView.Size = New System.Drawing.Size(326, 220)
+        Me.ProdukDataGridView.TabIndex = 55
+        '
+        'DataGridViewTextBoxColumn4
+        '
+        Me.DataGridViewTextBoxColumn4.DataPropertyName = "idProduk"
+        Me.DataGridViewTextBoxColumn4.HeaderText = "ID"
+        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
+        '
+        'DataGridViewTextBoxColumn5
+        '
+        Me.DataGridViewTextBoxColumn5.DataPropertyName = "nama"
+        Me.DataGridViewTextBoxColumn5.HeaderText = "NAMA"
+        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
+        '
+        'DataGridViewTextBoxColumn6
+        '
+        Me.DataGridViewTextBoxColumn6.DataPropertyName = "harga"
+        Me.DataGridViewTextBoxColumn6.HeaderText = "HARGA"
+        Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
+        '
+        'DataGridViewTextBoxColumn7
+        '
+        Me.DataGridViewTextBoxColumn7.DataPropertyName = "ukuran"
+        Me.DataGridViewTextBoxColumn7.HeaderText = "UKURAN"
+        Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
+        '
+        'DataGridViewTextBoxColumn8
+        '
+        Me.DataGridViewTextBoxColumn8.DataPropertyName = "warna"
+        Me.DataGridViewTextBoxColumn8.HeaderText = "WARNA"
+        Me.DataGridViewTextBoxColumn8.Name = "DataGridViewTextBoxColumn8"
+        '
+        'GroupBox1
+        '
+        Me.GroupBox1.Controls.Add(Me.refreshButton1)
+        Me.GroupBox1.Controls.Add(Me.simpanButton1)
+        Me.GroupBox1.Controls.Add(Me.editButton1)
+        Me.GroupBox1.Controls.Add(Me.ProdukDataGridView)
+        Me.GroupBox1.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox1.Location = New System.Drawing.Point(12, 94)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(367, 353)
+        Me.GroupBox1.TabIndex = 56
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "PRODUK"
+        '
+        'GroupBox2
+        '
+        Me.GroupBox2.Controls.Add(Me.refreshButton2)
+        Me.GroupBox2.Controls.Add(Me.UserDataGridView)
+        Me.GroupBox2.Controls.Add(Me.simpanButton2)
+        Me.GroupBox2.Controls.Add(Me.editButton2)
+        Me.GroupBox2.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox2.Location = New System.Drawing.Point(385, 94)
+        Me.GroupBox2.Name = "GroupBox2"
+        Me.GroupBox2.Size = New System.Drawing.Size(365, 353)
+        Me.GroupBox2.TabIndex = 57
+        Me.GroupBox2.TabStop = False
+        Me.GroupBox2.Text = "USER"
+        '
+        'editButton1
+        '
+        Me.editButton1.Location = New System.Drawing.Point(19, 294)
+        Me.editButton1.Name = "editButton1"
+        Me.editButton1.Size = New System.Drawing.Size(75, 23)
+        Me.editButton1.TabIndex = 56
+        Me.editButton1.Text = "Edit"
+        Me.editButton1.UseVisualStyleBackColor = True
+        '
+        'simpanButton1
+        '
+        Me.simpanButton1.Location = New System.Drawing.Point(100, 294)
+        Me.simpanButton1.Name = "simpanButton1"
+        Me.simpanButton1.Size = New System.Drawing.Size(75, 23)
+        Me.simpanButton1.TabIndex = 57
+        Me.simpanButton1.Text = "Simpan"
+        Me.simpanButton1.UseVisualStyleBackColor = True
+        '
+        'refreshButton1
+        '
+        Me.refreshButton1.Location = New System.Drawing.Point(181, 294)
+        Me.refreshButton1.Name = "refreshButton1"
+        Me.refreshButton1.Size = New System.Drawing.Size(75, 23)
+        Me.refreshButton1.TabIndex = 58
+        Me.refreshButton1.Text = "Refresh"
+        Me.refreshButton1.UseVisualStyleBackColor = True
+        '
+        'refreshButton2
+        '
+        Me.refreshButton2.Location = New System.Drawing.Point(183, 294)
+        Me.refreshButton2.Name = "refreshButton2"
+        Me.refreshButton2.Size = New System.Drawing.Size(75, 23)
+        Me.refreshButton2.TabIndex = 61
+        Me.refreshButton2.Text = "Refresh"
+        Me.refreshButton2.UseVisualStyleBackColor = True
+        '
+        'simpanButton2
+        '
+        Me.simpanButton2.Location = New System.Drawing.Point(102, 294)
+        Me.simpanButton2.Name = "simpanButton2"
+        Me.simpanButton2.Size = New System.Drawing.Size(75, 23)
+        Me.simpanButton2.TabIndex = 60
+        Me.simpanButton2.Text = "Simpan"
+        Me.simpanButton2.UseVisualStyleBackColor = True
+        '
+        'editButton2
+        '
+        Me.editButton2.Location = New System.Drawing.Point(21, 294)
+        Me.editButton2.Name = "editButton2"
+        Me.editButton2.Size = New System.Drawing.Size(75, 23)
+        Me.editButton2.TabIndex = 59
+        Me.editButton2.Text = "Edit"
+        Me.editButton2.UseVisualStyleBackColor = True
         '
         'formDatabase
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(754, 459)
+        Me.ClientSize = New System.Drawing.Size(762, 459)
         Me.ControlBox = False
-        Me.Controls.Add(Me.UserDataGridView)
-        Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(IdProdukLabel)
-        Me.Controls.Add(Me.IdProdukTextEdit)
-        Me.Controls.Add(NamaLabel1)
-        Me.Controls.Add(Me.NamaTextEdit1)
-        Me.Controls.Add(HargaLabel1)
-        Me.Controls.Add(Me.HargaSpinEdit1)
-        Me.Controls.Add(UkuranLabel1)
-        Me.Controls.Add(Me.UkuranTextEdit1)
-        Me.Controls.Add(WarnaLabel1)
-        Me.Controls.Add(Me.WarnaTextEdit1)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(IdPembelianLabel)
-        Me.Controls.Add(Me.IdPembelianTextEdit)
-        Me.Controls.Add(TanggalLabel)
-        Me.Controls.Add(Me.TanggalDateEdit)
-        Me.Controls.Add(User_userLabel)
-        Me.Controls.Add(Me.User_userTextEdit)
-        Me.Controls.Add(Produk_idProdukLabel)
-        Me.Controls.Add(Me.Produk_idProdukTextEdit)
-        Me.Controls.Add(NamaLabel)
-        Me.Controls.Add(Me.NamaTextEdit)
-        Me.Controls.Add(WarnaLabel)
-        Me.Controls.Add(Me.WarnaTextEdit)
-        Me.Controls.Add(UkuranLabel)
-        Me.Controls.Add(Me.UkuranTextEdit)
-        Me.Controls.Add(HargaLabel)
-        Me.Controls.Add(Me.HargaSpinEdit)
-        Me.Controls.Add(JumlahLabel)
-        Me.Controls.Add(Me.JumlahSpinEdit)
-        Me.Controls.Add(Total_hargaLabel)
-        Me.Controls.Add(Me.Total_hargaSpinEdit)
         Me.Controls.Add(Me.exitButton)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.GroupBox1)
+        Me.Controls.Add(Me.GroupBox2)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Name = "formDatabase"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
@@ -568,25 +316,12 @@ Partial Class formDatabase
         CType(Me.exitButton, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.OnlinesotreDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PembelianBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.IdPembelianTextEdit.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TanggalDateEdit.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TanggalDateEdit.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.User_userTextEdit.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Produk_idProdukTextEdit.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NamaTextEdit.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.WarnaTextEdit.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.UkuranTextEdit.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.HargaSpinEdit.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.JumlahSpinEdit.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Total_hargaSpinEdit.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ProdukBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.IdProdukTextEdit.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NamaTextEdit1.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.HargaSpinEdit1.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.UkuranTextEdit1.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.WarnaTextEdit1.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.UserBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.UserDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ProdukDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox2.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -600,29 +335,25 @@ Partial Class formDatabase
     Friend WithEvents PembelianTableAdapter As ONLINE_STORE.onlinesotreDataSetTableAdapters.pembelianTableAdapter
     Friend WithEvents TableAdapterManager As ONLINE_STORE.onlinesotreDataSetTableAdapters.TableAdapterManager
     Friend WithEvents ProdukTableAdapter As ONLINE_STORE.onlinesotreDataSetTableAdapters.produkTableAdapter
-    Friend WithEvents IdPembelianTextEdit As DevExpress.XtraEditors.TextEdit
-    Friend WithEvents TanggalDateEdit As DevExpress.XtraEditors.DateEdit
-    Friend WithEvents User_userTextEdit As DevExpress.XtraEditors.TextEdit
-    Friend WithEvents Produk_idProdukTextEdit As DevExpress.XtraEditors.TextEdit
-    Friend WithEvents NamaTextEdit As DevExpress.XtraEditors.TextEdit
-    Friend WithEvents WarnaTextEdit As DevExpress.XtraEditors.TextEdit
-    Friend WithEvents UkuranTextEdit As DevExpress.XtraEditors.TextEdit
-    Friend WithEvents HargaSpinEdit As DevExpress.XtraEditors.SpinEdit
-    Friend WithEvents JumlahSpinEdit As DevExpress.XtraEditors.SpinEdit
-    Friend WithEvents Total_hargaSpinEdit As DevExpress.XtraEditors.SpinEdit
-    Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents ProdukBindingSource As System.Windows.Forms.BindingSource
     Friend WithEvents UserTableAdapter As ONLINE_STORE.onlinesotreDataSetTableAdapters.userTableAdapter
-    Friend WithEvents IdProdukTextEdit As DevExpress.XtraEditors.TextEdit
-    Friend WithEvents NamaTextEdit1 As DevExpress.XtraEditors.TextEdit
-    Friend WithEvents HargaSpinEdit1 As DevExpress.XtraEditors.SpinEdit
-    Friend WithEvents UkuranTextEdit1 As DevExpress.XtraEditors.TextEdit
-    Friend WithEvents WarnaTextEdit1 As DevExpress.XtraEditors.TextEdit
-    Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents UserBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents UserDataGridView As System.Windows.Forms.DataGridView
+    Friend WithEvents ProdukDataGridView As System.Windows.Forms.DataGridView
+    Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
+    Friend WithEvents DataGridViewTextBoxColumn4 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn5 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn6 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn7 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn8 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
     Friend WithEvents DataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn3 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents refreshButton1 As System.Windows.Forms.Button
+    Friend WithEvents simpanButton1 As System.Windows.Forms.Button
+    Friend WithEvents editButton1 As System.Windows.Forms.Button
+    Friend WithEvents refreshButton2 As System.Windows.Forms.Button
+    Friend WithEvents simpanButton2 As System.Windows.Forms.Button
+    Friend WithEvents editButton2 As System.Windows.Forms.Button
 End Class
