@@ -46,13 +46,15 @@ Partial Class formDatabase
         Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.refreshProduk = New System.Windows.Forms.Button()
+        Me.simpanProduk = New System.Windows.Forms.Button()
+        Me.editProduk = New System.Windows.Forms.Button()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.editButton1 = New System.Windows.Forms.Button()
-        Me.simpanButton1 = New System.Windows.Forms.Button()
-        Me.refreshButton1 = New System.Windows.Forms.Button()
-        Me.refreshButton2 = New System.Windows.Forms.Button()
-        Me.simpanButton2 = New System.Windows.Forms.Button()
-        Me.editButton2 = New System.Windows.Forms.Button()
+        Me.refreshUser = New System.Windows.Forms.Button()
+        Me.simpanUser = New System.Windows.Forms.Button()
+        Me.editUser = New System.Windows.Forms.Button()
+        Me.hapusUser = New System.Windows.Forms.Button()
+        Me.tambahUser = New System.Windows.Forms.Button()
         CType(Me.exitButton, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.OnlinesotreDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PembelianBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -217,9 +219,9 @@ Partial Class formDatabase
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.refreshButton1)
-        Me.GroupBox1.Controls.Add(Me.simpanButton1)
-        Me.GroupBox1.Controls.Add(Me.editButton1)
+        Me.GroupBox1.Controls.Add(Me.refreshProduk)
+        Me.GroupBox1.Controls.Add(Me.simpanProduk)
+        Me.GroupBox1.Controls.Add(Me.editProduk)
         Me.GroupBox1.Controls.Add(Me.ProdukDataGridView)
         Me.GroupBox1.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.Location = New System.Drawing.Point(12, 94)
@@ -229,12 +231,41 @@ Partial Class formDatabase
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "PRODUK"
         '
+        'refreshProduk
+        '
+        Me.refreshProduk.Location = New System.Drawing.Point(270, 324)
+        Me.refreshProduk.Name = "refreshProduk"
+        Me.refreshProduk.Size = New System.Drawing.Size(75, 23)
+        Me.refreshProduk.TabIndex = 58
+        Me.refreshProduk.Text = "Refresh"
+        Me.refreshProduk.UseVisualStyleBackColor = True
+        '
+        'simpanProduk
+        '
+        Me.simpanProduk.Location = New System.Drawing.Point(189, 324)
+        Me.simpanProduk.Name = "simpanProduk"
+        Me.simpanProduk.Size = New System.Drawing.Size(75, 23)
+        Me.simpanProduk.TabIndex = 57
+        Me.simpanProduk.Text = "Simpan"
+        Me.simpanProduk.UseVisualStyleBackColor = True
+        '
+        'editProduk
+        '
+        Me.editProduk.Location = New System.Drawing.Point(19, 256)
+        Me.editProduk.Name = "editProduk"
+        Me.editProduk.Size = New System.Drawing.Size(75, 23)
+        Me.editProduk.TabIndex = 56
+        Me.editProduk.Text = "Edit"
+        Me.editProduk.UseVisualStyleBackColor = True
+        '
         'GroupBox2
         '
-        Me.GroupBox2.Controls.Add(Me.refreshButton2)
+        Me.GroupBox2.Controls.Add(Me.tambahUser)
+        Me.GroupBox2.Controls.Add(Me.hapusUser)
+        Me.GroupBox2.Controls.Add(Me.refreshUser)
         Me.GroupBox2.Controls.Add(Me.UserDataGridView)
-        Me.GroupBox2.Controls.Add(Me.simpanButton2)
-        Me.GroupBox2.Controls.Add(Me.editButton2)
+        Me.GroupBox2.Controls.Add(Me.simpanUser)
+        Me.GroupBox2.Controls.Add(Me.editUser)
         Me.GroupBox2.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox2.Location = New System.Drawing.Point(385, 94)
         Me.GroupBox2.Name = "GroupBox2"
@@ -243,59 +274,50 @@ Partial Class formDatabase
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "USER"
         '
-        'editButton1
+        'refreshUser
         '
-        Me.editButton1.Location = New System.Drawing.Point(19, 294)
-        Me.editButton1.Name = "editButton1"
-        Me.editButton1.Size = New System.Drawing.Size(75, 23)
-        Me.editButton1.TabIndex = 56
-        Me.editButton1.Text = "Edit"
-        Me.editButton1.UseVisualStyleBackColor = True
+        Me.refreshUser.Location = New System.Drawing.Point(272, 324)
+        Me.refreshUser.Name = "refreshUser"
+        Me.refreshUser.Size = New System.Drawing.Size(75, 23)
+        Me.refreshUser.TabIndex = 61
+        Me.refreshUser.Text = "Refresh"
+        Me.refreshUser.UseVisualStyleBackColor = True
         '
-        'simpanButton1
+        'simpanUser
         '
-        Me.simpanButton1.Location = New System.Drawing.Point(100, 294)
-        Me.simpanButton1.Name = "simpanButton1"
-        Me.simpanButton1.Size = New System.Drawing.Size(75, 23)
-        Me.simpanButton1.TabIndex = 57
-        Me.simpanButton1.Text = "Simpan"
-        Me.simpanButton1.UseVisualStyleBackColor = True
+        Me.simpanUser.Location = New System.Drawing.Point(191, 324)
+        Me.simpanUser.Name = "simpanUser"
+        Me.simpanUser.Size = New System.Drawing.Size(75, 23)
+        Me.simpanUser.TabIndex = 60
+        Me.simpanUser.Text = "Simpan"
+        Me.simpanUser.UseVisualStyleBackColor = True
         '
-        'refreshButton1
+        'editUser
         '
-        Me.refreshButton1.Location = New System.Drawing.Point(181, 294)
-        Me.refreshButton1.Name = "refreshButton1"
-        Me.refreshButton1.Size = New System.Drawing.Size(75, 23)
-        Me.refreshButton1.TabIndex = 58
-        Me.refreshButton1.Text = "Refresh"
-        Me.refreshButton1.UseVisualStyleBackColor = True
+        Me.editUser.Location = New System.Drawing.Point(21, 285)
+        Me.editUser.Name = "editUser"
+        Me.editUser.Size = New System.Drawing.Size(75, 23)
+        Me.editUser.TabIndex = 59
+        Me.editUser.Text = "Edit"
+        Me.editUser.UseVisualStyleBackColor = True
         '
-        'refreshButton2
+        'hapusUser
         '
-        Me.refreshButton2.Location = New System.Drawing.Point(183, 294)
-        Me.refreshButton2.Name = "refreshButton2"
-        Me.refreshButton2.Size = New System.Drawing.Size(75, 23)
-        Me.refreshButton2.TabIndex = 61
-        Me.refreshButton2.Text = "Refresh"
-        Me.refreshButton2.UseVisualStyleBackColor = True
+        Me.hapusUser.Location = New System.Drawing.Point(102, 256)
+        Me.hapusUser.Name = "hapusUser"
+        Me.hapusUser.Size = New System.Drawing.Size(75, 23)
+        Me.hapusUser.TabIndex = 62
+        Me.hapusUser.Text = "Hapus"
+        Me.hapusUser.UseVisualStyleBackColor = True
         '
-        'simpanButton2
+        'tambahUser
         '
-        Me.simpanButton2.Location = New System.Drawing.Point(102, 294)
-        Me.simpanButton2.Name = "simpanButton2"
-        Me.simpanButton2.Size = New System.Drawing.Size(75, 23)
-        Me.simpanButton2.TabIndex = 60
-        Me.simpanButton2.Text = "Simpan"
-        Me.simpanButton2.UseVisualStyleBackColor = True
-        '
-        'editButton2
-        '
-        Me.editButton2.Location = New System.Drawing.Point(21, 294)
-        Me.editButton2.Name = "editButton2"
-        Me.editButton2.Size = New System.Drawing.Size(75, 23)
-        Me.editButton2.TabIndex = 59
-        Me.editButton2.Text = "Edit"
-        Me.editButton2.UseVisualStyleBackColor = True
+        Me.tambahUser.Location = New System.Drawing.Point(21, 256)
+        Me.tambahUser.Name = "tambahUser"
+        Me.tambahUser.Size = New System.Drawing.Size(75, 23)
+        Me.tambahUser.TabIndex = 63
+        Me.tambahUser.Text = "Tambah"
+        Me.tambahUser.UseVisualStyleBackColor = True
         '
         'formDatabase
         '
@@ -350,10 +372,12 @@ Partial Class formDatabase
     Friend WithEvents DataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn3 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents refreshButton1 As System.Windows.Forms.Button
-    Friend WithEvents simpanButton1 As System.Windows.Forms.Button
-    Friend WithEvents editButton1 As System.Windows.Forms.Button
-    Friend WithEvents refreshButton2 As System.Windows.Forms.Button
-    Friend WithEvents simpanButton2 As System.Windows.Forms.Button
-    Friend WithEvents editButton2 As System.Windows.Forms.Button
+    Friend WithEvents refreshProduk As System.Windows.Forms.Button
+    Friend WithEvents simpanProduk As System.Windows.Forms.Button
+    Friend WithEvents editProduk As System.Windows.Forms.Button
+    Friend WithEvents refreshUser As System.Windows.Forms.Button
+    Friend WithEvents simpanUser As System.Windows.Forms.Button
+    Friend WithEvents editUser As System.Windows.Forms.Button
+    Friend WithEvents tambahUser As System.Windows.Forms.Button
+    Friend WithEvents hapusUser As System.Windows.Forms.Button
 End Class

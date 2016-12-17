@@ -22,11 +22,55 @@ Partial Class formKeranjang
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
+        Dim UserLabel As System.Windows.Forms.Label
+        Dim PasswordLabel As System.Windows.Forms.Label
+        Dim Label4 As System.Windows.Forms.Label
+        Dim Label7 As System.Windows.Forms.Label
+        Dim Label9 As System.Windows.Forms.Label
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.exitButton = New System.Windows.Forms.PictureBox()
+        Me.OnlinesotreDataSet = New ONLINE_STORE.onlinesotreDataSet()
+        Me.PembelianBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.PembelianTableAdapter = New ONLINE_STORE.onlinesotreDataSetTableAdapters.pembelianTableAdapter()
+        Me.TableAdapterManager = New ONLINE_STORE.onlinesotreDataSetTableAdapters.TableAdapterManager()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.DataGridViewTextBoxColumn10 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.PembelianDataGridView = New System.Windows.Forms.DataGridView()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.UserBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.UserTableAdapter = New ONLINE_STORE.onlinesotreDataSetTableAdapters.userTableAdapter()
+        Me.UserTextEdit = New DevExpress.XtraEditors.TextEdit()
+        Me.PasswordTextEdit = New DevExpress.XtraEditors.TextEdit()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
+        Me.Button1 = New System.Windows.Forms.Button()
+        UserLabel = New System.Windows.Forms.Label()
+        PasswordLabel = New System.Windows.Forms.Label()
+        Label4 = New System.Windows.Forms.Label()
+        Label7 = New System.Windows.Forms.Label()
+        Label9 = New System.Windows.Forms.Label()
         CType(Me.exitButton, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.OnlinesotreDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PembelianBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox1.SuspendLayout()
+        CType(Me.PembelianDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.UserBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.UserTextEdit.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PasswordTextEdit.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label6
@@ -63,27 +107,290 @@ Partial Class formKeranjang
         '
         Me.exitButton.Cursor = System.Windows.Forms.Cursors.Hand
         Me.exitButton.Image = Global.ONLINE_STORE.My.Resources.Resource1.cancel
-        Me.exitButton.Location = New System.Drawing.Point(774, 7)
+        Me.exitButton.Location = New System.Drawing.Point(805, 7)
         Me.exitButton.Name = "exitButton"
         Me.exitButton.Size = New System.Drawing.Size(32, 32)
         Me.exitButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
         Me.exitButton.TabIndex = 16
         Me.exitButton.TabStop = False
         '
+        'OnlinesotreDataSet
+        '
+        Me.OnlinesotreDataSet.DataSetName = "onlinesotreDataSet"
+        Me.OnlinesotreDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'PembelianBindingSource
+        '
+        Me.PembelianBindingSource.DataMember = "pembelian"
+        Me.PembelianBindingSource.DataSource = Me.OnlinesotreDataSet
+        '
+        'PembelianTableAdapter
+        '
+        Me.PembelianTableAdapter.ClearBeforeFill = True
+        '
+        'TableAdapterManager
+        '
+        Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
+        Me.TableAdapterManager.pembelianTableAdapter = Me.PembelianTableAdapter
+        Me.TableAdapterManager.produkTableAdapter = Nothing
+        Me.TableAdapterManager.UpdateOrder = ONLINE_STORE.onlinesotreDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        Me.TableAdapterManager.userTableAdapter = Me.UserTableAdapter
+        '
+        'ComboBox1
+        '
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Items.AddRange(New Object() {"Samarinda, Kalimantan Timur", "Balikpapan, Kalimantan Timur", "Tenggarong, Kalimantan Timur", "Bontang, Kalimantan Timur", "Nunukan, Kalimantan Utara", "Sangata, Kalimantan Timur"})
+        Me.ComboBox1.Location = New System.Drawing.Point(267, 262)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(121, 24)
+        Me.ComboBox1.TabIndex = 17
+        '
+        'GroupBox1
+        '
+        Me.GroupBox1.Controls.Add(Me.Button1)
+        Me.GroupBox1.Controls.Add(Me.ComboBox2)
+        Me.GroupBox1.Controls.Add(Label9)
+        Me.GroupBox1.Controls.Add(Me.Label10)
+        Me.GroupBox1.Controls.Add(Label7)
+        Me.GroupBox1.Controls.Add(Me.Label8)
+        Me.GroupBox1.Controls.Add(Label4)
+        Me.GroupBox1.Controls.Add(PasswordLabel)
+        Me.GroupBox1.Controls.Add(Me.PasswordTextEdit)
+        Me.GroupBox1.Controls.Add(UserLabel)
+        Me.GroupBox1.Controls.Add(Me.UserTextEdit)
+        Me.GroupBox1.Controls.Add(Me.Label3)
+        Me.GroupBox1.Controls.Add(Me.ComboBox1)
+        Me.GroupBox1.Controls.Add(Me.PembelianDataGridView)
+        Me.GroupBox1.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox1.Location = New System.Drawing.Point(12, 83)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(829, 363)
+        Me.GroupBox1.TabIndex = 19
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "Checkout"
+        '
+        'DataGridViewTextBoxColumn10
+        '
+        Me.DataGridViewTextBoxColumn10.DataPropertyName = "total_harga"
+        Me.DataGridViewTextBoxColumn10.HeaderText = "Total Harga"
+        Me.DataGridViewTextBoxColumn10.Name = "DataGridViewTextBoxColumn10"
+        '
+        'DataGridViewTextBoxColumn9
+        '
+        Me.DataGridViewTextBoxColumn9.DataPropertyName = "jumlah"
+        Me.DataGridViewTextBoxColumn9.HeaderText = "Jumlah"
+        Me.DataGridViewTextBoxColumn9.Name = "DataGridViewTextBoxColumn9"
+        Me.DataGridViewTextBoxColumn9.Width = 45
+        '
+        'DataGridViewTextBoxColumn8
+        '
+        Me.DataGridViewTextBoxColumn8.DataPropertyName = "harga"
+        Me.DataGridViewTextBoxColumn8.HeaderText = "Harga"
+        Me.DataGridViewTextBoxColumn8.Name = "DataGridViewTextBoxColumn8"
+        '
+        'DataGridViewTextBoxColumn7
+        '
+        Me.DataGridViewTextBoxColumn7.DataPropertyName = "ukuran"
+        Me.DataGridViewTextBoxColumn7.HeaderText = "Ukuran"
+        Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
+        Me.DataGridViewTextBoxColumn7.Width = 50
+        '
+        'DataGridViewTextBoxColumn6
+        '
+        Me.DataGridViewTextBoxColumn6.DataPropertyName = "warna"
+        Me.DataGridViewTextBoxColumn6.HeaderText = "Warna"
+        Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
+        '
+        'DataGridViewTextBoxColumn5
+        '
+        Me.DataGridViewTextBoxColumn5.DataPropertyName = "nama"
+        Me.DataGridViewTextBoxColumn5.HeaderText = "Nama"
+        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
+        '
+        'DataGridViewTextBoxColumn4
+        '
+        Me.DataGridViewTextBoxColumn4.DataPropertyName = "produk_idProduk"
+        Me.DataGridViewTextBoxColumn4.HeaderText = "ID Produk"
+        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
+        Me.DataGridViewTextBoxColumn4.Width = 50
+        '
+        'DataGridViewTextBoxColumn3
+        '
+        Me.DataGridViewTextBoxColumn3.DataPropertyName = "user_user"
+        Me.DataGridViewTextBoxColumn3.HeaderText = "User"
+        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
+        Me.DataGridViewTextBoxColumn3.Width = 80
+        '
+        'DataGridViewTextBoxColumn2
+        '
+        Me.DataGridViewTextBoxColumn2.DataPropertyName = "tanggal"
+        Me.DataGridViewTextBoxColumn2.HeaderText = "Tanggal"
+        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
+        Me.DataGridViewTextBoxColumn2.Width = 70
+        '
+        'DataGridViewTextBoxColumn1
+        '
+        Me.DataGridViewTextBoxColumn1.DataPropertyName = "idPembelian"
+        Me.DataGridViewTextBoxColumn1.HeaderText = "ID PMBLN"
+        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
+        Me.DataGridViewTextBoxColumn1.Width = 55
+        '
+        'PembelianDataGridView
+        '
+        Me.PembelianDataGridView.AutoGenerateColumns = False
+        Me.PembelianDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.PembelianDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn7, Me.DataGridViewTextBoxColumn8, Me.DataGridViewTextBoxColumn9, Me.DataGridViewTextBoxColumn10})
+        Me.PembelianDataGridView.DataSource = Me.PembelianBindingSource
+        Me.PembelianDataGridView.Location = New System.Drawing.Point(16, 19)
+        Me.PembelianDataGridView.Name = "PembelianDataGridView"
+        Me.PembelianDataGridView.Size = New System.Drawing.Size(793, 177)
+        Me.PembelianDataGridView.TabIndex = 16
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Century Gothic", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(11, 219)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(33, 30)
+        Me.Label3.TabIndex = 19
+        Me.Label3.Text = "1."
+        '
+        'UserBindingSource
+        '
+        Me.UserBindingSource.DataMember = "user"
+        Me.UserBindingSource.DataSource = Me.OnlinesotreDataSet
+        '
+        'UserTableAdapter
+        '
+        Me.UserTableAdapter.ClearBeforeFill = True
+        '
+        'UserLabel
+        '
+        UserLabel.AutoSize = True
+        UserLabel.Location = New System.Drawing.Point(53, 262)
+        UserLabel.Name = "UserLabel"
+        UserLabel.Size = New System.Drawing.Size(62, 16)
+        UserLabel.TabIndex = 19
+        UserLabel.Text = "Username"
+        '
+        'UserTextEdit
+        '
+        Me.UserTextEdit.DataBindings.Add(New System.Windows.Forms.Binding("EditValue", Me.UserBindingSource, "user", True))
+        Me.UserTextEdit.Location = New System.Drawing.Point(53, 281)
+        Me.UserTextEdit.Name = "UserTextEdit"
+        Me.UserTextEdit.Size = New System.Drawing.Size(100, 20)
+        Me.UserTextEdit.TabIndex = 20
+        '
+        'PasswordLabel
+        '
+        PasswordLabel.AutoSize = True
+        PasswordLabel.Location = New System.Drawing.Point(53, 303)
+        PasswordLabel.Name = "PasswordLabel"
+        PasswordLabel.Size = New System.Drawing.Size(59, 16)
+        PasswordLabel.TabIndex = 20
+        PasswordLabel.Text = "Password"
+        '
+        'PasswordTextEdit
+        '
+        Me.PasswordTextEdit.DataBindings.Add(New System.Windows.Forms.Binding("EditValue", Me.UserBindingSource, "password", True))
+        Me.PasswordTextEdit.Location = New System.Drawing.Point(53, 322)
+        Me.PasswordTextEdit.Name = "PasswordTextEdit"
+        Me.PasswordTextEdit.Size = New System.Drawing.Size(100, 20)
+        Me.PasswordTextEdit.TabIndex = 21
+        '
+        'Label4
+        '
+        Label4.AutoSize = True
+        Label4.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Label4.Location = New System.Drawing.Point(50, 218)
+        Label4.Name = "Label4"
+        Label4.Size = New System.Drawing.Size(136, 32)
+        Label4.TabIndex = 22
+        Label4.Text = "Masukan Username" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "dan password" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        '
+        'Label7
+        '
+        Label7.AutoSize = True
+        Label7.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Label7.Location = New System.Drawing.Point(264, 230)
+        Label7.Name = "Label7"
+        Label7.Size = New System.Drawing.Size(113, 16)
+        Label7.TabIndex = 24
+        Label7.Text = "Pilih kota tujuan"
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Century Gothic", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Location = New System.Drawing.Point(225, 219)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(33, 30)
+        Me.Label8.TabIndex = 23
+        Me.Label8.Text = "2."
+        '
+        'Label9
+        '
+        Label9.AutoSize = True
+        Label9.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Label9.Location = New System.Drawing.Point(463, 230)
+        Label9.Name = "Label9"
+        Label9.Size = New System.Drawing.Size(176, 16)
+        Label9.TabIndex = 26
+        Label9.Text = "Pilih Metode Pembayaran"
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Font = New System.Drawing.Font("Century Gothic", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.Location = New System.Drawing.Point(424, 219)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(33, 30)
+        Me.Label10.TabIndex = 25
+        Me.Label10.Text = "3."
+        '
+        'ComboBox2
+        '
+        Me.ComboBox2.FormattingEnabled = True
+        Me.ComboBox2.Items.AddRange(New Object() {"Transfer", "Bayar di tempat", "COD"})
+        Me.ComboBox2.Location = New System.Drawing.Point(466, 262)
+        Me.ComboBox2.Name = "ComboBox2"
+        Me.ComboBox2.Size = New System.Drawing.Size(121, 24)
+        Me.ComboBox2.TabIndex = 27
+        '
+        'Button1
+        '
+        Me.Button1.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Location = New System.Drawing.Point(675, 262)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(119, 60)
+        Me.Button1.TabIndex = 28
+        Me.Button1.Text = "BELI SEKARANG"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'formKeranjang
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(818, 422)
+        Me.ClientSize = New System.Drawing.Size(849, 458)
         Me.ControlBox = False
         Me.Controls.Add(Me.exitButton)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.GroupBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Name = "formKeranjang"
         Me.Text = "KERANJANG"
         CType(Me.exitButton, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.OnlinesotreDataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PembelianBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
+        CType(Me.PembelianDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.UserBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.UserTextEdit.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PasswordTextEdit.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -92,4 +399,30 @@ Partial Class formKeranjang
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents exitButton As System.Windows.Forms.PictureBox
+    Friend WithEvents OnlinesotreDataSet As ONLINE_STORE.onlinesotreDataSet
+    Friend WithEvents PembelianBindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents PembelianTableAdapter As ONLINE_STORE.onlinesotreDataSetTableAdapters.pembelianTableAdapter
+    Friend WithEvents TableAdapterManager As ONLINE_STORE.onlinesotreDataSetTableAdapters.TableAdapterManager
+    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
+    Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
+    Friend WithEvents PembelianDataGridView As System.Windows.Forms.DataGridView
+    Friend WithEvents DataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn3 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn4 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn5 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn6 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn7 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn8 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn9 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn10 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents UserTableAdapter As ONLINE_STORE.onlinesotreDataSetTableAdapters.userTableAdapter
+    Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents UserBindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents ComboBox2 As System.Windows.Forms.ComboBox
+    Friend WithEvents Label10 As System.Windows.Forms.Label
+    Friend WithEvents Label8 As System.Windows.Forms.Label
+    Friend WithEvents PasswordTextEdit As DevExpress.XtraEditors.TextEdit
+    Friend WithEvents UserTextEdit As DevExpress.XtraEditors.TextEdit
 End Class
