@@ -39,6 +39,11 @@ Partial Class formStore
         Me.produk = New System.Windows.Forms.PictureBox()
         Me.databaseButton = New System.Windows.Forms.PictureBox()
         Me.minimizeButton = New System.Windows.Forms.PictureBox()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.TextBox5 = New System.Windows.Forms.TextBox()
         CType(Me.keranjangButton, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.exitButton, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.tambahkanButton, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -92,10 +97,10 @@ Partial Class formStore
         'namaBarang
         '
         Me.namaBarang.AutoSize = True
-        Me.namaBarang.Font = New System.Drawing.Font("Century Gothic", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.namaBarang.Location = New System.Drawing.Point(12, 101)
+        Me.namaBarang.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.namaBarang.Location = New System.Drawing.Point(12, 115)
         Me.namaBarang.Name = "namaBarang"
-        Me.namaBarang.Size = New System.Drawing.Size(190, 30)
+        Me.namaBarang.Size = New System.Drawing.Size(149, 23)
         Me.namaBarang.TabIndex = 12
         Me.namaBarang.Text = "NAMABARANG"
         '
@@ -103,7 +108,7 @@ Partial Class formStore
         '
         Me.hargaBarang.AutoSize = True
         Me.hargaBarang.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.hargaBarang.Location = New System.Drawing.Point(13, 142)
+        Me.hargaBarang.Location = New System.Drawing.Point(12, 170)
         Me.hargaBarang.Name = "hargaBarang"
         Me.hargaBarang.Size = New System.Drawing.Size(78, 23)
         Me.hargaBarang.TabIndex = 13
@@ -112,10 +117,10 @@ Partial Class formStore
         'idBarang
         '
         Me.idBarang.AutoSize = True
-        Me.idBarang.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.idBarang.Location = New System.Drawing.Point(14, 91)
+        Me.idBarang.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.idBarang.Location = New System.Drawing.Point(14, 88)
         Me.idBarang.Name = "idBarang"
-        Me.idBarang.Size = New System.Drawing.Size(20, 17)
+        Me.idBarang.Size = New System.Drawing.Size(20, 16)
         Me.idBarang.TabIndex = 12
         Me.idBarang.Text = "ID"
         '
@@ -123,7 +128,7 @@ Partial Class formStore
         '
         Me.warnaBarang.AutoSize = True
         Me.warnaBarang.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.warnaBarang.Location = New System.Drawing.Point(13, 297)
+        Me.warnaBarang.Location = New System.Drawing.Point(13, 237)
         Me.warnaBarang.Name = "warnaBarang"
         Me.warnaBarang.Size = New System.Drawing.Size(80, 23)
         Me.warnaBarang.TabIndex = 14
@@ -133,7 +138,7 @@ Partial Class formStore
         '
         Me.ukuranBarang.AutoSize = True
         Me.ukuranBarang.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ukuranBarang.Location = New System.Drawing.Point(13, 320)
+        Me.ukuranBarang.Location = New System.Drawing.Point(13, 296)
         Me.ukuranBarang.Name = "ukuranBarang"
         Me.ukuranBarang.Size = New System.Drawing.Size(87, 23)
         Me.ukuranBarang.TabIndex = 14
@@ -226,10 +231,56 @@ Partial Class formStore
         Me.minimizeButton.TabIndex = 1
         Me.minimizeButton.TabStop = False
         '
+        'TextBox1
+        '
+        Me.TextBox1.BackColor = System.Drawing.SystemColors.Window
+        Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox1.Location = New System.Drawing.Point(40, 85)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(169, 20)
+        Me.TextBox1.TabIndex = 17
+        '
+        'TextBox2
+        '
+        Me.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox2.Location = New System.Drawing.Point(40, 141)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(169, 20)
+        Me.TextBox2.TabIndex = 18
+        '
+        'TextBox3
+        '
+        Me.TextBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox3.Location = New System.Drawing.Point(40, 196)
+        Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.Size = New System.Drawing.Size(169, 20)
+        Me.TextBox3.TabIndex = 19
+        '
+        'TextBox4
+        '
+        Me.TextBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox4.Location = New System.Drawing.Point(40, 263)
+        Me.TextBox4.Name = "TextBox4"
+        Me.TextBox4.Size = New System.Drawing.Size(169, 20)
+        Me.TextBox4.TabIndex = 20
+        '
+        'TextBox5
+        '
+        Me.TextBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox5.Location = New System.Drawing.Point(40, 322)
+        Me.TextBox5.Name = "TextBox5"
+        Me.TextBox5.Size = New System.Drawing.Size(169, 20)
+        Me.TextBox5.TabIndex = 21
+        '
         'formStore
         '
         Me.ClientSize = New System.Drawing.Size(920, 513)
         Me.ControlBox = False
+        Me.Controls.Add(Me.TextBox5)
+        Me.Controls.Add(Me.TextBox4)
+        Me.Controls.Add(Me.TextBox3)
+        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.keranjangButton)
         Me.Controls.Add(Me.exitButton)
         Me.Controls.Add(Me.ukuranBarang)
@@ -291,5 +342,10 @@ Partial Class formStore
     Friend WithEvents ukuranBarang As System.Windows.Forms.Label
     Friend WithEvents exitButton As System.Windows.Forms.PictureBox
     Friend WithEvents keranjangButton As System.Windows.Forms.PictureBox
+    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox5 As System.Windows.Forms.TextBox
 
 End Class
