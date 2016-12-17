@@ -73,7 +73,7 @@ Partial Class Form_Selamat_Datang
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(237, 112)
+        Me.Label3.Location = New System.Drawing.Point(233, 112)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(83, 16)
         Me.Label3.TabIndex = 4

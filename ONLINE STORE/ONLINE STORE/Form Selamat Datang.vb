@@ -9,6 +9,7 @@
         Application.Exit()
     End Sub
 
+<<<<<<< HEAD
     Private Sub Label2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label2.Click
 
     End Sub
@@ -23,4 +24,6 @@
     Private Sub Timer1_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs)
 
     End Sub
+=======
+>>>>>>> d3c682e4c001b56b05a6146628dd8a1568961bfc
 End Class
