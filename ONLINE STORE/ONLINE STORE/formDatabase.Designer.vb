@@ -26,7 +26,6 @@ Partial Class formDatabase
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.exitButton = New System.Windows.Forms.PictureBox()
         Me.OnlinesotreDataSet = New ONLINE_STORE.onlinesotreDataSet()
         Me.PembelianBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.PembelianTableAdapter = New ONLINE_STORE.onlinesotreDataSetTableAdapters.pembelianTableAdapter()
@@ -50,12 +49,12 @@ Partial Class formDatabase
         Me.simpanProduk = New System.Windows.Forms.Button()
         Me.editProduk = New System.Windows.Forms.Button()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.tambahUser = New System.Windows.Forms.Button()
+        Me.hapusUser = New System.Windows.Forms.Button()
         Me.refreshUser = New System.Windows.Forms.Button()
         Me.simpanUser = New System.Windows.Forms.Button()
         Me.editUser = New System.Windows.Forms.Button()
-        Me.hapusUser = New System.Windows.Forms.Button()
-        Me.tambahUser = New System.Windows.Forms.Button()
-        CType(Me.exitButton, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.exitButton = New System.Windows.Forms.PictureBox()
         CType(Me.OnlinesotreDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PembelianBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ProdukBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -64,6 +63,7 @@ Partial Class formDatabase
         CType(Me.ProdukDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
+        CType(Me.exitButton, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label6
@@ -95,17 +95,6 @@ Partial Class formDatabase
         Me.Label1.Size = New System.Drawing.Size(111, 18)
         Me.Label1.TabIndex = 12
         Me.Label1.Text = "D A T A B A S E"
-        '
-        'exitButton
-        '
-        Me.exitButton.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.exitButton.Image = Global.ONLINE_STORE.My.Resources.Resource1.cancel
-        Me.exitButton.Location = New System.Drawing.Point(710, 9)
-        Me.exitButton.Name = "exitButton"
-        Me.exitButton.Size = New System.Drawing.Size(32, 32)
-        Me.exitButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
-        Me.exitButton.TabIndex = 16
-        Me.exitButton.TabStop = False
         '
         'OnlinesotreDataSet
         '
@@ -153,6 +142,7 @@ Partial Class formDatabase
         Me.UserDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.UserDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3})
         Me.UserDataGridView.DataSource = Me.UserBindingSource
+        Me.UserDataGridView.Enabled = False
         Me.UserDataGridView.Location = New System.Drawing.Point(21, 30)
         Me.UserDataGridView.Name = "UserDataGridView"
         Me.UserDataGridView.Size = New System.Drawing.Size(326, 220)
@@ -182,6 +172,7 @@ Partial Class formDatabase
         Me.ProdukDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.ProdukDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn7, Me.DataGridViewTextBoxColumn8})
         Me.ProdukDataGridView.DataSource = Me.ProdukBindingSource
+        Me.ProdukDataGridView.Enabled = False
         Me.ProdukDataGridView.Location = New System.Drawing.Point(19, 30)
         Me.ProdukDataGridView.Name = "ProdukDataGridView"
         Me.ProdukDataGridView.Size = New System.Drawing.Size(326, 220)
@@ -274,6 +265,24 @@ Partial Class formDatabase
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "USER"
         '
+        'tambahUser
+        '
+        Me.tambahUser.Location = New System.Drawing.Point(21, 256)
+        Me.tambahUser.Name = "tambahUser"
+        Me.tambahUser.Size = New System.Drawing.Size(75, 23)
+        Me.tambahUser.TabIndex = 63
+        Me.tambahUser.Text = "Tambah"
+        Me.tambahUser.UseVisualStyleBackColor = True
+        '
+        'hapusUser
+        '
+        Me.hapusUser.Location = New System.Drawing.Point(102, 256)
+        Me.hapusUser.Name = "hapusUser"
+        Me.hapusUser.Size = New System.Drawing.Size(75, 23)
+        Me.hapusUser.TabIndex = 62
+        Me.hapusUser.Text = "Hapus"
+        Me.hapusUser.UseVisualStyleBackColor = True
+        '
         'refreshUser
         '
         Me.refreshUser.Location = New System.Drawing.Point(272, 324)
@@ -301,23 +310,16 @@ Partial Class formDatabase
         Me.editUser.Text = "Edit"
         Me.editUser.UseVisualStyleBackColor = True
         '
-        'hapusUser
+        'exitButton
         '
-        Me.hapusUser.Location = New System.Drawing.Point(102, 256)
-        Me.hapusUser.Name = "hapusUser"
-        Me.hapusUser.Size = New System.Drawing.Size(75, 23)
-        Me.hapusUser.TabIndex = 62
-        Me.hapusUser.Text = "Hapus"
-        Me.hapusUser.UseVisualStyleBackColor = True
-        '
-        'tambahUser
-        '
-        Me.tambahUser.Location = New System.Drawing.Point(21, 256)
-        Me.tambahUser.Name = "tambahUser"
-        Me.tambahUser.Size = New System.Drawing.Size(75, 23)
-        Me.tambahUser.TabIndex = 63
-        Me.tambahUser.Text = "Tambah"
-        Me.tambahUser.UseVisualStyleBackColor = True
+        Me.exitButton.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.exitButton.Image = Global.ONLINE_STORE.My.Resources.Resource1.cancel
+        Me.exitButton.Location = New System.Drawing.Point(710, 9)
+        Me.exitButton.Name = "exitButton"
+        Me.exitButton.Size = New System.Drawing.Size(32, 32)
+        Me.exitButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.exitButton.TabIndex = 16
+        Me.exitButton.TabStop = False
         '
         'formDatabase
         '
@@ -335,7 +337,6 @@ Partial Class formDatabase
         Me.Name = "formDatabase"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = " "
-        CType(Me.exitButton, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.OnlinesotreDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PembelianBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ProdukBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
@@ -344,6 +345,7 @@ Partial Class formDatabase
         CType(Me.ProdukDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox2.ResumeLayout(False)
+        CType(Me.exitButton, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

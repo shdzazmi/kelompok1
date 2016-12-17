@@ -80,6 +80,7 @@ Partial Class LOGIN
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.Control
         Me.ClientSize = New System.Drawing.Size(264, 103)
         Me.ControlBox = False
         Me.Controls.Add(Me.Label2)

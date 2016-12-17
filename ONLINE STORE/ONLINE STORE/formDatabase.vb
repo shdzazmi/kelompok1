@@ -23,4 +23,44 @@
 
     'End Sub
 
+    Private Sub ProdukDataGridView_CellContentClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles ProdukDataGridView.CellContentClick
+
+    End Sub
+
+    Private Sub tambahUser_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles tambahUser.Click
+        UserBindingSource.AddNew()
+    End Sub
+
+    Private Sub hapusUser_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles hapusUser.Click
+        If MessageBox.Show("Hapus Data ?", "konfirmasi", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = Windows.Forms.DialogResult.Yes Then
+            UserBindingSource.RemoveCurrent()
+
+            Me.Validate()
+            Me.UserBindingSource.EndEdit()
+            Me.TableAdapterManager.UpdateAll(Me.OnlinesotreDataSet)
+            MessageBox.Show("data terhapus")
+        End If
+    End Sub
+
+    Private Sub simpanUser_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles simpanUser.Click
+        Me.Validate()
+        Me.UserBindingSource.EndEdit()
+        Me.TableAdapterManager.UpdateAll(Me.OnlinesotreDataSet)
+        MessageBox.Show("berhasil simpan data")
+    End Sub
+
+    Private Sub simpanProduk_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles simpanProduk.Click
+        Me.Validate()
+        Me.ProdukBindingSource.EndEdit()
+        Me.TableAdapterManager.UpdateAll(Me.OnlinesotreDataSet)
+        MessageBox.Show("berhasil tambah data")
+    End Sub
+
+    Private Sub editUser_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles editUser.Click
+        UserDataGridView.Enabled = True
+    End Sub
+
+    Private Sub editProduk_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles editProduk.Click
+        ProdukDataGridView.Enabled = True
+    End Sub
 End Class
