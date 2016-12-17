@@ -16,4 +16,8 @@
             TextBox1.Clear()
         End If
     End Sub
+
+    Private Sub Button1_Enter(ByVal sender As Object, ByVal e As System.EventArgs) Handles Button1.Enter
+
+    End Sub
 End Class

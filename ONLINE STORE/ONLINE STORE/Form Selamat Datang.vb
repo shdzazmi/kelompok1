@@ -19,4 +19,8 @@
     Private Sub Form_Selamat_Datang_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
     End Sub
+
+    Private Sub Timer1_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs)
+
+    End Sub
 End Class
