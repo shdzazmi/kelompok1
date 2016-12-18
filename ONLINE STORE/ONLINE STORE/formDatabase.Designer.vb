@@ -45,7 +45,6 @@ Partial Class formDatabase
         Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.hapusProduk = New System.Windows.Forms.Button()
         Me.refreshProduk = New System.Windows.Forms.Button()
         Me.simpanProduk = New System.Windows.Forms.Button()
         Me.editProduk = New System.Windows.Forms.Button()
@@ -55,6 +54,7 @@ Partial Class formDatabase
         Me.simpanUser = New System.Windows.Forms.Button()
         Me.editUser = New System.Windows.Forms.Button()
         Me.exitButton = New System.Windows.Forms.PictureBox()
+        Me.tambahButton = New System.Windows.Forms.Button()
         CType(Me.OnlinesotreDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PembelianBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ProdukBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -210,7 +210,6 @@ Partial Class formDatabase
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.hapusProduk)
         Me.GroupBox1.Controls.Add(Me.refreshProduk)
         Me.GroupBox1.Controls.Add(Me.simpanProduk)
         Me.GroupBox1.Controls.Add(Me.editProduk)
@@ -223,18 +222,9 @@ Partial Class formDatabase
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "PRODUK"
         '
-        'hapusProduk
-        '
-        Me.hapusProduk.Location = New System.Drawing.Point(19, 314)
-        Me.hapusProduk.Name = "hapusProduk"
-        Me.hapusProduk.Size = New System.Drawing.Size(75, 23)
-        Me.hapusProduk.TabIndex = 63
-        Me.hapusProduk.Text = "Hapus"
-        Me.hapusProduk.UseVisualStyleBackColor = True
-        '
         'refreshProduk
         '
-        Me.refreshProduk.Location = New System.Drawing.Point(100, 314)
+        Me.refreshProduk.Location = New System.Drawing.Point(19, 314)
         Me.refreshProduk.Name = "refreshProduk"
         Me.refreshProduk.Size = New System.Drawing.Size(75, 23)
         Me.refreshProduk.TabIndex = 58
@@ -261,6 +251,7 @@ Partial Class formDatabase
         '
         'GroupBox2
         '
+        Me.GroupBox2.Controls.Add(Me.tambahButton)
         Me.GroupBox2.Controls.Add(Me.hapusUser)
         Me.GroupBox2.Controls.Add(Me.refreshUser)
         Me.GroupBox2.Controls.Add(Me.UserDataGridView)
@@ -320,6 +311,15 @@ Partial Class formDatabase
         Me.exitButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
         Me.exitButton.TabIndex = 16
         Me.exitButton.TabStop = False
+        '
+        'tambahButton
+        '
+        Me.tambahButton.Location = New System.Drawing.Point(184, 285)
+        Me.tambahButton.Name = "tambahButton"
+        Me.tambahButton.Size = New System.Drawing.Size(75, 23)
+        Me.tambahButton.TabIndex = 63
+        Me.tambahButton.Text = "Tambah"
+        Me.tambahButton.UseVisualStyleBackColor = True
         '
         'formDatabase
         '
@@ -381,5 +381,5 @@ Partial Class formDatabase
     Friend WithEvents simpanUser As System.Windows.Forms.Button
     Friend WithEvents editUser As System.Windows.Forms.Button
     Friend WithEvents hapusUser As System.Windows.Forms.Button
-    Friend WithEvents hapusProduk As System.Windows.Forms.Button
+    Friend WithEvents tambahButton As System.Windows.Forms.Button
 End Class

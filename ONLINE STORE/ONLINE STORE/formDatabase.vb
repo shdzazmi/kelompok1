@@ -64,7 +64,7 @@
         ProdukDataGridView.Enabled = True
     End Sub
 
-    Private Sub hapusProduk_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles hapusProduk.Click
+    Private Sub hapusProduk_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         If MessageBox.Show("Hapus Data ?", "konfirmasi", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = Windows.Forms.DialogResult.Yes Then
             ProdukBindingSource.RemoveCurrent()
 
