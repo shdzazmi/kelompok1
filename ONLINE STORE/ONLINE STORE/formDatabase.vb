@@ -27,7 +27,7 @@
 
     End Sub
 
-    Private Sub tambahUser_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles tambahUser.Click
+    Private Sub tambahUser_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         UserBindingSource.AddNew()
     End Sub
 
@@ -62,5 +62,16 @@
 
     Private Sub editProduk_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles editProduk.Click
         ProdukDataGridView.Enabled = True
+    End Sub
+
+    Private Sub hapusProduk_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+        If MessageBox.Show("Hapus Data ?", "konfirmasi", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = Windows.Forms.DialogResult.Yes Then
+            ProdukBindingSource.RemoveCurrent()
+
+            Me.Validate()
+            Me.ProdukBindingSource.EndEdit()
+            Me.TableAdapterManager.UpdateAll(Me.OnlinesotreDataSet)
+            MessageBox.Show("data terhapus")
+        End If
     End Sub
 End Class

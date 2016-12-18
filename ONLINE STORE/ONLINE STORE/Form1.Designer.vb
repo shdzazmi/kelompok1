@@ -61,7 +61,7 @@ Partial Class formStore
         Me.Label5.AutoSize = True
         Me.Label5.BackColor = System.Drawing.Color.Transparent
         Me.Label5.Font = New System.Drawing.Font("Century Gothic", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(387, 2)
+        Me.Label5.Location = New System.Drawing.Point(435, 8)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(112, 42)
         Me.Label5.TabIndex = 8
@@ -71,7 +71,7 @@ Partial Class formStore
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(391, 37)
+        Me.Label6.Location = New System.Drawing.Point(439, 43)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(100, 18)
         Me.Label6.TabIndex = 9
@@ -81,7 +81,7 @@ Partial Class formStore
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(299, 470)
+        Me.Label7.Location = New System.Drawing.Point(347, 476)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(100, 18)
         Me.Label7.TabIndex = 10
@@ -91,7 +91,7 @@ Partial Class formStore
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(493, 470)
+        Me.Label8.Location = New System.Drawing.Point(541, 476)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(98, 18)
         Me.Label8.TabIndex = 11
@@ -101,7 +101,7 @@ Partial Class formStore
         '
         Me.namaBarang.AutoSize = True
         Me.namaBarang.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.namaBarang.Location = New System.Drawing.Point(12, 115)
+        Me.namaBarang.Location = New System.Drawing.Point(35, 153)
         Me.namaBarang.Name = "namaBarang"
         Me.namaBarang.Size = New System.Drawing.Size(149, 23)
         Me.namaBarang.TabIndex = 12
@@ -111,7 +111,7 @@ Partial Class formStore
         '
         Me.hargaBarang.AutoSize = True
         Me.hargaBarang.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.hargaBarang.Location = New System.Drawing.Point(12, 170)
+        Me.hargaBarang.Location = New System.Drawing.Point(35, 208)
         Me.hargaBarang.Name = "hargaBarang"
         Me.hargaBarang.Size = New System.Drawing.Size(78, 23)
         Me.hargaBarang.TabIndex = 13
@@ -121,7 +121,7 @@ Partial Class formStore
         '
         Me.idBarang.AutoSize = True
         Me.idBarang.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.idBarang.Location = New System.Drawing.Point(14, 88)
+        Me.idBarang.Location = New System.Drawing.Point(37, 126)
         Me.idBarang.Name = "idBarang"
         Me.idBarang.Size = New System.Drawing.Size(20, 16)
         Me.idBarang.TabIndex = 12
@@ -131,7 +131,7 @@ Partial Class formStore
         '
         Me.warnaBarang.AutoSize = True
         Me.warnaBarang.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.warnaBarang.Location = New System.Drawing.Point(13, 296)
+        Me.warnaBarang.Location = New System.Drawing.Point(36, 334)
         Me.warnaBarang.Name = "warnaBarang"
         Me.warnaBarang.Size = New System.Drawing.Size(80, 23)
         Me.warnaBarang.TabIndex = 14
@@ -141,7 +141,7 @@ Partial Class formStore
         '
         Me.ukuranBarang.AutoSize = True
         Me.ukuranBarang.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ukuranBarang.Location = New System.Drawing.Point(12, 237)
+        Me.ukuranBarang.Location = New System.Drawing.Point(35, 275)
         Me.ukuranBarang.Name = "ukuranBarang"
         Me.ukuranBarang.Size = New System.Drawing.Size(87, 23)
         Me.ukuranBarang.TabIndex = 14
@@ -152,7 +152,7 @@ Partial Class formStore
         Me.TextBox1.BackColor = System.Drawing.SystemColors.Window
         Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TextBox1.Enabled = False
-        Me.TextBox1.Location = New System.Drawing.Point(40, 85)
+        Me.TextBox1.Location = New System.Drawing.Point(63, 123)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(169, 20)
         Me.TextBox1.TabIndex = 17
@@ -161,7 +161,7 @@ Partial Class formStore
         '
         Me.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TextBox2.Enabled = False
-        Me.TextBox2.Location = New System.Drawing.Point(40, 141)
+        Me.TextBox2.Location = New System.Drawing.Point(63, 179)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(169, 20)
         Me.TextBox2.TabIndex = 18
@@ -170,7 +170,7 @@ Partial Class formStore
         '
         Me.TextBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TextBox3.Enabled = False
-        Me.TextBox3.Location = New System.Drawing.Point(40, 196)
+        Me.TextBox3.Location = New System.Drawing.Point(63, 234)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(169, 20)
         Me.TextBox3.TabIndex = 19
@@ -179,7 +179,7 @@ Partial Class formStore
         '
         Me.TextBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TextBox4.Enabled = False
-        Me.TextBox4.Location = New System.Drawing.Point(40, 263)
+        Me.TextBox4.Location = New System.Drawing.Point(63, 301)
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(169, 20)
         Me.TextBox4.TabIndex = 20
@@ -188,7 +188,7 @@ Partial Class formStore
         '
         Me.TextBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TextBox5.Enabled = False
-        Me.TextBox5.Location = New System.Drawing.Point(40, 322)
+        Me.TextBox5.Location = New System.Drawing.Point(63, 360)
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.Size = New System.Drawing.Size(169, 20)
         Me.TextBox5.TabIndex = 21
@@ -197,7 +197,7 @@ Partial Class formStore
         '
         Me.GroupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.GroupBox1.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox1.Location = New System.Drawing.Point(12, 69)
+        Me.GroupBox1.Location = New System.Drawing.Point(35, 107)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(205, 301)
         Me.GroupBox1.TabIndex = 22
@@ -208,7 +208,7 @@ Partial Class formStore
         '
         Me.keranjangButton.Cursor = System.Windows.Forms.Cursors.Hand
         Me.keranjangButton.Image = Global.ONLINE_STORE.My.Resources.Resource1.shopping_cart
-        Me.keranjangButton.Location = New System.Drawing.Point(524, 435)
+        Me.keranjangButton.Location = New System.Drawing.Point(572, 441)
         Me.keranjangButton.Name = "keranjangButton"
         Me.keranjangButton.Size = New System.Drawing.Size(32, 32)
         Me.keranjangButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -230,7 +230,7 @@ Partial Class formStore
         '
         Me.tambahkanButton.Cursor = System.Windows.Forms.Cursors.Hand
         Me.tambahkanButton.Image = Global.ONLINE_STORE.My.Resources.Resource1.shopping_bag
-        Me.tambahkanButton.Location = New System.Drawing.Point(328, 435)
+        Me.tambahkanButton.Location = New System.Drawing.Point(376, 441)
         Me.tambahkanButton.Name = "tambahkanButton"
         Me.tambahkanButton.Size = New System.Drawing.Size(32, 32)
         Me.tambahkanButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -241,7 +241,7 @@ Partial Class formStore
         '
         Me.backButton.Cursor = System.Windows.Forms.Cursors.Hand
         Me.backButton.Image = Global.ONLINE_STORE.My.Resources.Resource1.back
-        Me.backButton.Location = New System.Drawing.Point(232, 228)
+        Me.backButton.Location = New System.Drawing.Point(280, 234)
         Me.backButton.Name = "backButton"
         Me.backButton.Size = New System.Drawing.Size(32, 32)
         Me.backButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -252,7 +252,7 @@ Partial Class formStore
         '
         Me.nextButton.Cursor = System.Windows.Forms.Cursors.Hand
         Me.nextButton.Image = CType(resources.GetObject("nextButton.Image"), System.Drawing.Image)
-        Me.nextButton.Location = New System.Drawing.Point(626, 228)
+        Me.nextButton.Location = New System.Drawing.Point(674, 234)
         Me.nextButton.Name = "nextButton"
         Me.nextButton.Size = New System.Drawing.Size(32, 32)
         Me.nextButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -262,7 +262,7 @@ Partial Class formStore
         'produk
         '
         Me.produk.Image = Global.ONLINE_STORE.My.Resources.Resource1.baju1
-        Me.produk.Location = New System.Drawing.Point(270, 79)
+        Me.produk.Location = New System.Drawing.Point(318, 85)
         Me.produk.Name = "produk"
         Me.produk.Size = New System.Drawing.Size(350, 350)
         Me.produk.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
