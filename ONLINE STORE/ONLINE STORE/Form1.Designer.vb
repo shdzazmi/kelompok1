@@ -46,6 +46,7 @@ Partial Class formStore
         Me.produk = New System.Windows.Forms.PictureBox()
         Me.databaseButton = New System.Windows.Forms.PictureBox()
         Me.minimizeButton = New System.Windows.Forms.PictureBox()
+        Me.GroupBox1.SuspendLayout()
         CType(Me.keranjangButton, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.exitButton, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.tambahkanButton, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -101,7 +102,7 @@ Partial Class formStore
         '
         Me.namaBarang.AutoSize = True
         Me.namaBarang.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.namaBarang.Location = New System.Drawing.Point(35, 153)
+        Me.namaBarang.Location = New System.Drawing.Point(6, 46)
         Me.namaBarang.Name = "namaBarang"
         Me.namaBarang.Size = New System.Drawing.Size(149, 23)
         Me.namaBarang.TabIndex = 12
@@ -111,7 +112,7 @@ Partial Class formStore
         '
         Me.hargaBarang.AutoSize = True
         Me.hargaBarang.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.hargaBarang.Location = New System.Drawing.Point(35, 208)
+        Me.hargaBarang.Location = New System.Drawing.Point(6, 101)
         Me.hargaBarang.Name = "hargaBarang"
         Me.hargaBarang.Size = New System.Drawing.Size(78, 23)
         Me.hargaBarang.TabIndex = 13
@@ -131,7 +132,7 @@ Partial Class formStore
         '
         Me.warnaBarang.AutoSize = True
         Me.warnaBarang.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.warnaBarang.Location = New System.Drawing.Point(36, 334)
+        Me.warnaBarang.Location = New System.Drawing.Point(6, 227)
         Me.warnaBarang.Name = "warnaBarang"
         Me.warnaBarang.Size = New System.Drawing.Size(80, 23)
         Me.warnaBarang.TabIndex = 14
@@ -141,7 +142,7 @@ Partial Class formStore
         '
         Me.ukuranBarang.AutoSize = True
         Me.ukuranBarang.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ukuranBarang.Location = New System.Drawing.Point(35, 275)
+        Me.ukuranBarang.Location = New System.Drawing.Point(6, 168)
         Me.ukuranBarang.Name = "ukuranBarang"
         Me.ukuranBarang.Size = New System.Drawing.Size(87, 23)
         Me.ukuranBarang.TabIndex = 14
@@ -195,11 +196,15 @@ Partial Class formStore
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.namaBarang)
+        Me.GroupBox1.Controls.Add(Me.hargaBarang)
+        Me.GroupBox1.Controls.Add(Me.ukuranBarang)
+        Me.GroupBox1.Controls.Add(Me.warnaBarang)
         Me.GroupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.GroupBox1.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox1.Location = New System.Drawing.Point(35, 107)
+        Me.GroupBox1.Location = New System.Drawing.Point(32, 102)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(205, 301)
+        Me.GroupBox1.Size = New System.Drawing.Size(213, 301)
         Me.GroupBox1.TabIndex = 22
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Detail"
@@ -219,7 +224,7 @@ Partial Class formStore
         '
         Me.exitButton.Cursor = System.Windows.Forms.Cursors.Hand
         Me.exitButton.Image = Global.ONLINE_STORE.My.Resources.Resource1.cancel
-        Me.exitButton.Location = New System.Drawing.Point(887, 1)
+        Me.exitButton.Location = New System.Drawing.Point(876, 12)
         Me.exitButton.Name = "exitButton"
         Me.exitButton.Size = New System.Drawing.Size(32, 32)
         Me.exitButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -285,7 +290,7 @@ Partial Class formStore
         Me.minimizeButton.BackColor = System.Drawing.Color.Transparent
         Me.minimizeButton.Cursor = System.Windows.Forms.Cursors.Hand
         Me.minimizeButton.Image = Global.ONLINE_STORE.My.Resources.Resource1.download
-        Me.minimizeButton.Location = New System.Drawing.Point(848, 2)
+        Me.minimizeButton.Location = New System.Drawing.Point(838, 12)
         Me.minimizeButton.Name = "minimizeButton"
         Me.minimizeButton.Size = New System.Drawing.Size(32, 32)
         Me.minimizeButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -294,6 +299,8 @@ Partial Class formStore
         '
         'formStore
         '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(920, 513)
         Me.ControlBox = False
         Me.Controls.Add(Me.Label6)
@@ -305,11 +312,7 @@ Partial Class formStore
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.keranjangButton)
         Me.Controls.Add(Me.exitButton)
-        Me.Controls.Add(Me.ukuranBarang)
-        Me.Controls.Add(Me.warnaBarang)
-        Me.Controls.Add(Me.hargaBarang)
         Me.Controls.Add(Me.idBarang)
-        Me.Controls.Add(Me.namaBarang)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.tambahkanButton)
@@ -320,11 +323,10 @@ Partial Class formStore
         Me.Controls.Add(Me.minimizeButton)
         Me.Controls.Add(Me.GroupBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
-        Me.MaximizeBox = False
-        Me.MinimizeBox = False
         Me.Name = "formStore"
-        Me.ShowIcon = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
         CType(Me.keranjangButton, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.exitButton, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.tambahkanButton, System.ComponentModel.ISupportInitialize).EndInit()

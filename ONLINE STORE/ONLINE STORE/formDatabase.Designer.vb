@@ -49,12 +49,12 @@ Partial Class formDatabase
         Me.simpanProduk = New System.Windows.Forms.Button()
         Me.editProduk = New System.Windows.Forms.Button()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.tambahUser = New System.Windows.Forms.Button()
         Me.hapusUser = New System.Windows.Forms.Button()
         Me.refreshUser = New System.Windows.Forms.Button()
         Me.simpanUser = New System.Windows.Forms.Button()
         Me.editUser = New System.Windows.Forms.Button()
         Me.exitButton = New System.Windows.Forms.PictureBox()
-        Me.tambahButton = New System.Windows.Forms.Button()
         CType(Me.OnlinesotreDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PembelianBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ProdukBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -224,7 +224,7 @@ Partial Class formDatabase
         '
         'refreshProduk
         '
-        Me.refreshProduk.Location = New System.Drawing.Point(19, 314)
+        Me.refreshProduk.Location = New System.Drawing.Point(100, 314)
         Me.refreshProduk.Name = "refreshProduk"
         Me.refreshProduk.Size = New System.Drawing.Size(75, 23)
         Me.refreshProduk.TabIndex = 58
@@ -233,7 +233,7 @@ Partial Class formDatabase
         '
         'simpanProduk
         '
-        Me.simpanProduk.Location = New System.Drawing.Point(100, 285)
+        Me.simpanProduk.Location = New System.Drawing.Point(19, 314)
         Me.simpanProduk.Name = "simpanProduk"
         Me.simpanProduk.Size = New System.Drawing.Size(75, 23)
         Me.simpanProduk.TabIndex = 57
@@ -242,7 +242,7 @@ Partial Class formDatabase
         '
         'editProduk
         '
-        Me.editProduk.Location = New System.Drawing.Point(19, 285)
+        Me.editProduk.Location = New System.Drawing.Point(19, 256)
         Me.editProduk.Name = "editProduk"
         Me.editProduk.Size = New System.Drawing.Size(75, 23)
         Me.editProduk.TabIndex = 56
@@ -251,7 +251,7 @@ Partial Class formDatabase
         '
         'GroupBox2
         '
-        Me.GroupBox2.Controls.Add(Me.tambahButton)
+        Me.GroupBox2.Controls.Add(Me.tambahUser)
         Me.GroupBox2.Controls.Add(Me.hapusUser)
         Me.GroupBox2.Controls.Add(Me.refreshUser)
         Me.GroupBox2.Controls.Add(Me.UserDataGridView)
@@ -265,9 +265,18 @@ Partial Class formDatabase
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "USER"
         '
+        'tambahUser
+        '
+        Me.tambahUser.Location = New System.Drawing.Point(21, 285)
+        Me.tambahUser.Name = "tambahUser"
+        Me.tambahUser.Size = New System.Drawing.Size(75, 23)
+        Me.tambahUser.TabIndex = 63
+        Me.tambahUser.Text = "Tambah"
+        Me.tambahUser.UseVisualStyleBackColor = True
+        '
         'hapusUser
         '
-        Me.hapusUser.Location = New System.Drawing.Point(21, 314)
+        Me.hapusUser.Location = New System.Drawing.Point(102, 285)
         Me.hapusUser.Name = "hapusUser"
         Me.hapusUser.Size = New System.Drawing.Size(75, 23)
         Me.hapusUser.TabIndex = 62
@@ -285,7 +294,7 @@ Partial Class formDatabase
         '
         'simpanUser
         '
-        Me.simpanUser.Location = New System.Drawing.Point(102, 285)
+        Me.simpanUser.Location = New System.Drawing.Point(21, 314)
         Me.simpanUser.Name = "simpanUser"
         Me.simpanUser.Size = New System.Drawing.Size(75, 23)
         Me.simpanUser.TabIndex = 60
@@ -294,7 +303,7 @@ Partial Class formDatabase
         '
         'editUser
         '
-        Me.editUser.Location = New System.Drawing.Point(21, 285)
+        Me.editUser.Location = New System.Drawing.Point(184, 285)
         Me.editUser.Name = "editUser"
         Me.editUser.Size = New System.Drawing.Size(75, 23)
         Me.editUser.TabIndex = 59
@@ -311,15 +320,6 @@ Partial Class formDatabase
         Me.exitButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
         Me.exitButton.TabIndex = 16
         Me.exitButton.TabStop = False
-        '
-        'tambahButton
-        '
-        Me.tambahButton.Location = New System.Drawing.Point(184, 285)
-        Me.tambahButton.Name = "tambahButton"
-        Me.tambahButton.Size = New System.Drawing.Size(75, 23)
-        Me.tambahButton.TabIndex = 63
-        Me.tambahButton.Text = "Tambah"
-        Me.tambahButton.UseVisualStyleBackColor = True
         '
         'formDatabase
         '
@@ -381,5 +381,5 @@ Partial Class formDatabase
     Friend WithEvents simpanUser As System.Windows.Forms.Button
     Friend WithEvents editUser As System.Windows.Forms.Button
     Friend WithEvents hapusUser As System.Windows.Forms.Button
-    Friend WithEvents tambahButton As System.Windows.Forms.Button
+    Friend WithEvents tambahUser As System.Windows.Forms.Button
 End Class

@@ -125,7 +125,7 @@ Partial Class Form_Selamat_Datang
         Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Name = "Form_Selamat_Datang"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = " RAGS Store"
+        Me.Text = " "
         Me.TransparencyKey = System.Drawing.Color.White
         Me.ResumeLayout(False)
         Me.PerformLayout()
