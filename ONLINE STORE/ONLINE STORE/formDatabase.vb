@@ -27,7 +27,7 @@
 
     End Sub
 
-    Private Sub tambahUser_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles tambahUser.Click
+    Private Sub tambahUser_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         UserBindingSource.AddNew()
     End Sub
 
