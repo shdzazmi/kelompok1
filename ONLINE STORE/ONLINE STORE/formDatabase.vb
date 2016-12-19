@@ -13,15 +13,15 @@
 
     End Sub
 
-    'Private Sub formDatabase_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-    'TODO: This line of code loads data into the 'OnlinesotreDataSet.user' table. You can move, or remove it, as needed.
-    '  Me.UserTableAdapter.Fill(Me.OnlinesotreDataSet.user)
-    'TODO: This line of code loads data into the 'OnlinesotreDataSet.produk' table. You can move, or remove it, as needed.
-    '  Me.ProdukTableAdapter.Fill(Me.OnlinesotreDataSet.produk)
-    'TODO: This line of code loads data into the 'OnlinesotreDataSet.pembelian' table. You can move, or remove it, as needed.
-    ' Me.PembelianTableAdapter.Fill(Me.OnlinesotreDataSet.pembelian)
+    Private Sub formDatabase_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        'TODO: This line of code loads data into the 'OnlinesotreDataSet.user' table. You can move, or remove it, as needed.
+        Me.UserTableAdapter.Fill(Me.OnlinesotreDataSet.user)
+        'TODO: This line of code loads data into the 'OnlinesotreDataSet.produk' table. You can move, or remove it, as needed.
+        Me.ProdukTableAdapter.Fill(Me.OnlinesotreDataSet.produk)
+        'TODO: This line of code loads data into the 'OnlinesotreDataSet.pembelian' table. You can move, or remove it, as needed.
+        Me.PembelianTableAdapter.Fill(Me.OnlinesotreDataSet.pembelian)
 
-    'End Sub
+        End Sub
 
     Private Sub ProdukDataGridView_CellContentClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles ProdukDataGridView.CellContentClick
 
