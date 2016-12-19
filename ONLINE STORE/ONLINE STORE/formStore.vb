@@ -13,28 +13,88 @@
         Select Case ImageNum
             Case 1
                 produk.Image = My.Resources.Resource1.baju1
+                TextBox1.Text = "B01"
+                TextBox2.Text = "T-SHIRT RED SIMPLE EDITION"
+                TextBox3.Text = "90000"
+                TextBox4.Text = "S-XL"
+                TextBox5.Text = "MERAH-HITAM"
             Case 2
                 produk.Image = My.Resources.Resource1.baju2
+                TextBox1.Text = "B02"
+                TextBox2.Text = "T-SHIRT HORIZONTAL MOTIF PINK"
+                TextBox3.Text = "90000"
+                TextBox4.Text = "S-XL"
+                TextBox5.Text = "PINK-HITAM"
             Case 3
                 produk.Image = My.Resources.Resource1.kaos1
+                TextBox1.Text = "K01"
+                TextBox2.Text = "KAOS KAKI RASTA PREMIUM"
+                TextBox3.Text = "45000"
+                TextBox4.Text = "26"
+                TextBox5.Text = "HIJAU"
             Case 4
                 produk.Image = My.Resources.Resource1.kaos2
+                TextBox1.Text = "K02"
+                TextBox2.Text = "KAOS STCL GRADIENT ABU ABU"
+                TextBox3.Text = "45000"
+                TextBox4.Text = "26"
+                TextBox5.Text = "ABU-ABU-HITAM"
             Case 5
                 produk.Image = My.Resources.Resource1.kemeja1
+                TextBox1.Text = "M01"
+                TextBox2.Text = "KEMEJA RIPCURL PREMIUM DESIGN"
+                TextBox3.Text = "140000"
+                TextBox4.Text = "M-XL"
+                TextBox5.Text = "MERAH"
             Case 6
                 produk.Image = My.Resources.Resource1.kemeja2
+                TextBox1.Text = "M02"
+                TextBox2.Text = "KEMEJA RIPCURL 02 PREMIUM DESIGN"
+                TextBox3.Text = "150000"
+                TextBox4.Text = "M-XL"
+                TextBox5.Text = "HITAM"
             Case 7
                 produk.Image = My.Resources.Resource1.sepatu1
+                TextBox1.Text = "S01"
+                TextBox2.Text = "VANS OFF THE WALL NEW"
+                TextBox3.Text = "250000"
+                TextBox4.Text = "39-42"
+                TextBox5.Text = "ABU-ABU"
             Case 8
                 produk.Image = My.Resources.Resource1.sepatu2
+                TextBox1.Text = "S02"
+                TextBox2.Text = "VANS OFF THE WALL R30"
+                TextBox3.Text = "210000"
+                TextBox4.Text = "39-41"
+                TextBox5.Text = "HITAM"
             Case 9
                 produk.Image = My.Resources.Resource1.tas1
+                TextBox1.Text = "T01"
+                TextBox2.Text = "BACKPACKER LEATHER BROWN UNISEX"
+                TextBox3.Text = "250000"
+                TextBox4.Text = "36X15X25"
+                TextBox5.Text = "COKLAT"
             Case 10
                 produk.Image = My.Resources.Resource1.tas2
+                TextBox1.Text = "T02"
+                TextBox2.Text = "BACKPACKER FOR TRAVEL UNISEX"
+                TextBox3.Text = "220000"
+                TextBox4.Text = "36X12X26"
+                TextBox5.Text = "COKLAT TUA"
             Case 11
                 produk.Image = My.Resources.Resource1.topi1
+                TextBox1.Text = "H01"
+                TextBox2.Text = "BEAR SNAPBACK BROWN-GREY"
+                TextBox3.Text = "70000"
+                TextBox4.Text = "M-L"
+                TextBox5.Text = "COKLAT"
             Case 12
                 produk.Image = My.Resources.Resource1.topi2
+                TextBox1.Text = "H02"
+                TextBox2.Text = "RIDECORE HAT GREY"
+                TextBox3.Text = "60000"
+                TextBox4.Text = "S-L"
+                TextBox5.Text = "ABU-ABU"
 
         End Select
     End Sub
