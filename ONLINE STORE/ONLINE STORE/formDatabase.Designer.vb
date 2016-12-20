@@ -49,15 +49,18 @@ Partial Class formDatabase
         Me.simpanProduk = New System.Windows.Forms.Button()
         Me.editProduk = New System.Windows.Forms.Button()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.UserTextEdit = New DevExpress.XtraEditors.TextEdit()
+        Me.PasswordTextEdit = New DevExpress.XtraEditors.TextEdit()
+        Me.NoHapeTextEdit = New DevExpress.XtraEditors.TextEdit()
         Me.tambahUser = New System.Windows.Forms.Button()
         Me.hapusUser = New System.Windows.Forms.Button()
         Me.refreshUser = New System.Windows.Forms.Button()
         Me.simpanUser = New System.Windows.Forms.Button()
         Me.editUser = New System.Windows.Forms.Button()
         Me.exitButton = New System.Windows.Forms.PictureBox()
-        Me.UserTextEdit = New DevExpress.XtraEditors.TextEdit()
-        Me.PasswordTextEdit = New DevExpress.XtraEditors.TextEdit()
-        Me.NoHapeTextEdit = New DevExpress.XtraEditors.TextEdit()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
         CType(Me.OnlinesotreDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PembelianBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ProdukBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -66,10 +69,10 @@ Partial Class formDatabase
         CType(Me.ProdukDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
-        CType(Me.exitButton, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.UserTextEdit.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PasswordTextEdit.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NoHapeTextEdit.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.exitButton, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label6
@@ -223,14 +226,14 @@ Partial Class formDatabase
         Me.GroupBox1.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.Location = New System.Drawing.Point(12, 94)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(367, 353)
+        Me.GroupBox1.Size = New System.Drawing.Size(367, 385)
         Me.GroupBox1.TabIndex = 56
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "PRODUK"
         '
         'refreshProduk
         '
-        Me.refreshProduk.Location = New System.Drawing.Point(100, 314)
+        Me.refreshProduk.Location = New System.Drawing.Point(100, 349)
         Me.refreshProduk.Name = "refreshProduk"
         Me.refreshProduk.Size = New System.Drawing.Size(75, 23)
         Me.refreshProduk.TabIndex = 58
@@ -239,7 +242,7 @@ Partial Class formDatabase
         '
         'simpanProduk
         '
-        Me.simpanProduk.Location = New System.Drawing.Point(19, 314)
+        Me.simpanProduk.Location = New System.Drawing.Point(19, 349)
         Me.simpanProduk.Name = "simpanProduk"
         Me.simpanProduk.Size = New System.Drawing.Size(75, 23)
         Me.simpanProduk.TabIndex = 57
@@ -257,6 +260,9 @@ Partial Class formDatabase
         '
         'GroupBox2
         '
+        Me.GroupBox2.Controls.Add(Me.Label4)
+        Me.GroupBox2.Controls.Add(Me.Label3)
+        Me.GroupBox2.Controls.Add(Me.Label2)
         Me.GroupBox2.Controls.Add(Me.UserTextEdit)
         Me.GroupBox2.Controls.Add(Me.PasswordTextEdit)
         Me.GroupBox2.Controls.Add(Me.NoHapeTextEdit)
@@ -269,14 +275,44 @@ Partial Class formDatabase
         Me.GroupBox2.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox2.Location = New System.Drawing.Point(385, 94)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(367, 357)
+        Me.GroupBox2.Size = New System.Drawing.Size(367, 385)
         Me.GroupBox2.TabIndex = 57
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "USER"
         '
+        'UserTextEdit
+        '
+        Me.UserTextEdit.DataBindings.Add(New System.Windows.Forms.Binding("EditValue", Me.UserBindingSource, "user", True))
+        Me.UserTextEdit.EditValue = "Username"
+        Me.UserTextEdit.Location = New System.Drawing.Point(21, 283)
+        Me.UserTextEdit.Name = "UserTextEdit"
+        Me.UserTextEdit.Size = New System.Drawing.Size(100, 20)
+        Me.UserTextEdit.TabIndex = 64
+        Me.UserTextEdit.Visible = False
+        '
+        'PasswordTextEdit
+        '
+        Me.PasswordTextEdit.DataBindings.Add(New System.Windows.Forms.Binding("EditValue", Me.UserBindingSource, "password", True))
+        Me.PasswordTextEdit.EditValue = "Password"
+        Me.PasswordTextEdit.Location = New System.Drawing.Point(127, 283)
+        Me.PasswordTextEdit.Name = "PasswordTextEdit"
+        Me.PasswordTextEdit.Size = New System.Drawing.Size(100, 20)
+        Me.PasswordTextEdit.TabIndex = 66
+        Me.PasswordTextEdit.Visible = False
+        '
+        'NoHapeTextEdit
+        '
+        Me.NoHapeTextEdit.DataBindings.Add(New System.Windows.Forms.Binding("EditValue", Me.UserBindingSource, "noHape", True))
+        Me.NoHapeTextEdit.EditValue = "No. HP"
+        Me.NoHapeTextEdit.Location = New System.Drawing.Point(233, 283)
+        Me.NoHapeTextEdit.Name = "NoHapeTextEdit"
+        Me.NoHapeTextEdit.Size = New System.Drawing.Size(100, 20)
+        Me.NoHapeTextEdit.TabIndex = 68
+        Me.NoHapeTextEdit.Visible = False
+        '
         'tambahUser
         '
-        Me.tambahUser.Location = New System.Drawing.Point(21, 285)
+        Me.tambahUser.Location = New System.Drawing.Point(21, 320)
         Me.tambahUser.Name = "tambahUser"
         Me.tambahUser.Size = New System.Drawing.Size(75, 23)
         Me.tambahUser.TabIndex = 63
@@ -285,7 +321,8 @@ Partial Class formDatabase
         '
         'hapusUser
         '
-        Me.hapusUser.Location = New System.Drawing.Point(102, 285)
+        Me.hapusUser.Enabled = False
+        Me.hapusUser.Location = New System.Drawing.Point(102, 320)
         Me.hapusUser.Name = "hapusUser"
         Me.hapusUser.Size = New System.Drawing.Size(75, 23)
         Me.hapusUser.TabIndex = 62
@@ -294,7 +331,7 @@ Partial Class formDatabase
         '
         'refreshUser
         '
-        Me.refreshUser.Location = New System.Drawing.Point(102, 314)
+        Me.refreshUser.Location = New System.Drawing.Point(102, 349)
         Me.refreshUser.Name = "refreshUser"
         Me.refreshUser.Size = New System.Drawing.Size(75, 23)
         Me.refreshUser.TabIndex = 61
@@ -303,7 +340,8 @@ Partial Class formDatabase
         '
         'simpanUser
         '
-        Me.simpanUser.Location = New System.Drawing.Point(21, 314)
+        Me.simpanUser.Enabled = False
+        Me.simpanUser.Location = New System.Drawing.Point(21, 349)
         Me.simpanUser.Name = "simpanUser"
         Me.simpanUser.Size = New System.Drawing.Size(75, 23)
         Me.simpanUser.TabIndex = 60
@@ -312,7 +350,7 @@ Partial Class formDatabase
         '
         'editUser
         '
-        Me.editUser.Location = New System.Drawing.Point(184, 285)
+        Me.editUser.Location = New System.Drawing.Point(184, 320)
         Me.editUser.Name = "editUser"
         Me.editUser.Size = New System.Drawing.Size(75, 23)
         Me.editUser.TabIndex = 59
@@ -330,41 +368,41 @@ Partial Class formDatabase
         Me.exitButton.TabIndex = 16
         Me.exitButton.TabStop = False
         '
-        'UserTextEdit
+        'Label2
         '
-        Me.UserTextEdit.DataBindings.Add(New System.Windows.Forms.Binding("EditValue", Me.UserBindingSource, "user", True))
-        Me.UserTextEdit.EditValue = "Username"
-        Me.UserTextEdit.Location = New System.Drawing.Point(22, 259)
-        Me.UserTextEdit.Name = "UserTextEdit"
-        Me.UserTextEdit.Size = New System.Drawing.Size(100, 20)
-        Me.UserTextEdit.TabIndex = 64
-        Me.UserTextEdit.Visible = False
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(18, 264)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(60, 15)
+        Me.Label2.TabIndex = 69
+        Me.Label2.Text = "Username"
+        Me.Label2.Visible = False
         '
-        'PasswordTextEdit
+        'Label3
         '
-        Me.PasswordTextEdit.DataBindings.Add(New System.Windows.Forms.Binding("EditValue", Me.UserBindingSource, "password", True))
-        Me.PasswordTextEdit.EditValue = "Password"
-        Me.PasswordTextEdit.Location = New System.Drawing.Point(128, 259)
-        Me.PasswordTextEdit.Name = "PasswordTextEdit"
-        Me.PasswordTextEdit.Size = New System.Drawing.Size(100, 20)
-        Me.PasswordTextEdit.TabIndex = 66
-        Me.PasswordTextEdit.Visible = False
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(124, 264)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(58, 15)
+        Me.Label3.TabIndex = 70
+        Me.Label3.Text = "Password"
+        Me.Label3.Visible = False
         '
-        'NoHapeTextEdit
+        'Label4
         '
-        Me.NoHapeTextEdit.DataBindings.Add(New System.Windows.Forms.Binding("EditValue", Me.UserBindingSource, "noHape", True))
-        Me.NoHapeTextEdit.EditValue = "No. HP"
-        Me.NoHapeTextEdit.Location = New System.Drawing.Point(234, 259)
-        Me.NoHapeTextEdit.Name = "NoHapeTextEdit"
-        Me.NoHapeTextEdit.Size = New System.Drawing.Size(100, 20)
-        Me.NoHapeTextEdit.TabIndex = 68
-        Me.NoHapeTextEdit.Visible = False
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(230, 264)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(44, 15)
+        Me.Label4.TabIndex = 71
+        Me.Label4.Text = "No. HP"
+        Me.Label4.Visible = False
         '
         'formDatabase
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(762, 459)
+        Me.ClientSize = New System.Drawing.Size(762, 491)
         Me.ControlBox = False
         Me.Controls.Add(Me.exitButton)
         Me.Controls.Add(Me.Label1)
@@ -384,10 +422,11 @@ Partial Class formDatabase
         CType(Me.ProdukDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox2.ResumeLayout(False)
-        CType(Me.exitButton, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox2.PerformLayout()
         CType(Me.UserTextEdit.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PasswordTextEdit.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.NoHapeTextEdit.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.exitButton, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -427,4 +466,7 @@ Partial Class formDatabase
     Friend WithEvents UserTextEdit As DevExpress.XtraEditors.TextEdit
     Friend WithEvents PasswordTextEdit As DevExpress.XtraEditors.TextEdit
     Friend WithEvents NoHapeTextEdit As DevExpress.XtraEditors.TextEdit
+    Friend WithEvents Label4 As System.Windows.Forms.Label
+    Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents Label2 As System.Windows.Forms.Label
 End Class
