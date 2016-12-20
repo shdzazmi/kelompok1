@@ -55,6 +55,9 @@ Partial Class formDatabase
         Me.simpanUser = New System.Windows.Forms.Button()
         Me.editUser = New System.Windows.Forms.Button()
         Me.exitButton = New System.Windows.Forms.PictureBox()
+        Me.UserTextEdit = New DevExpress.XtraEditors.TextEdit()
+        Me.PasswordTextEdit = New DevExpress.XtraEditors.TextEdit()
+        Me.NoHapeTextEdit = New DevExpress.XtraEditors.TextEdit()
         CType(Me.OnlinesotreDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PembelianBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ProdukBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -64,6 +67,9 @@ Partial Class formDatabase
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         CType(Me.exitButton, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.UserTextEdit.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PasswordTextEdit.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NoHapeTextEdit.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label6
@@ -251,6 +257,9 @@ Partial Class formDatabase
         '
         'GroupBox2
         '
+        Me.GroupBox2.Controls.Add(Me.UserTextEdit)
+        Me.GroupBox2.Controls.Add(Me.PasswordTextEdit)
+        Me.GroupBox2.Controls.Add(Me.NoHapeTextEdit)
         Me.GroupBox2.Controls.Add(Me.tambahUser)
         Me.GroupBox2.Controls.Add(Me.hapusUser)
         Me.GroupBox2.Controls.Add(Me.refreshUser)
@@ -260,7 +269,7 @@ Partial Class formDatabase
         Me.GroupBox2.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox2.Location = New System.Drawing.Point(385, 94)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(365, 353)
+        Me.GroupBox2.Size = New System.Drawing.Size(367, 357)
         Me.GroupBox2.TabIndex = 57
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "USER"
@@ -321,6 +330,36 @@ Partial Class formDatabase
         Me.exitButton.TabIndex = 16
         Me.exitButton.TabStop = False
         '
+        'UserTextEdit
+        '
+        Me.UserTextEdit.DataBindings.Add(New System.Windows.Forms.Binding("EditValue", Me.UserBindingSource, "user", True))
+        Me.UserTextEdit.EditValue = "Username"
+        Me.UserTextEdit.Location = New System.Drawing.Point(22, 259)
+        Me.UserTextEdit.Name = "UserTextEdit"
+        Me.UserTextEdit.Size = New System.Drawing.Size(100, 20)
+        Me.UserTextEdit.TabIndex = 64
+        Me.UserTextEdit.Visible = False
+        '
+        'PasswordTextEdit
+        '
+        Me.PasswordTextEdit.DataBindings.Add(New System.Windows.Forms.Binding("EditValue", Me.UserBindingSource, "password", True))
+        Me.PasswordTextEdit.EditValue = "Password"
+        Me.PasswordTextEdit.Location = New System.Drawing.Point(128, 259)
+        Me.PasswordTextEdit.Name = "PasswordTextEdit"
+        Me.PasswordTextEdit.Size = New System.Drawing.Size(100, 20)
+        Me.PasswordTextEdit.TabIndex = 66
+        Me.PasswordTextEdit.Visible = False
+        '
+        'NoHapeTextEdit
+        '
+        Me.NoHapeTextEdit.DataBindings.Add(New System.Windows.Forms.Binding("EditValue", Me.UserBindingSource, "noHape", True))
+        Me.NoHapeTextEdit.EditValue = "No. HP"
+        Me.NoHapeTextEdit.Location = New System.Drawing.Point(234, 259)
+        Me.NoHapeTextEdit.Name = "NoHapeTextEdit"
+        Me.NoHapeTextEdit.Size = New System.Drawing.Size(100, 20)
+        Me.NoHapeTextEdit.TabIndex = 68
+        Me.NoHapeTextEdit.Visible = False
+        '
         'formDatabase
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -346,6 +385,9 @@ Partial Class formDatabase
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox2.ResumeLayout(False)
         CType(Me.exitButton, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.UserTextEdit.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PasswordTextEdit.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.NoHapeTextEdit.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -382,4 +424,7 @@ Partial Class formDatabase
     Friend WithEvents editUser As System.Windows.Forms.Button
     Friend WithEvents hapusUser As System.Windows.Forms.Button
     Friend WithEvents tambahUser As System.Windows.Forms.Button
+    Friend WithEvents UserTextEdit As DevExpress.XtraEditors.TextEdit
+    Friend WithEvents PasswordTextEdit As DevExpress.XtraEditors.TextEdit
+    Friend WithEvents NoHapeTextEdit As DevExpress.XtraEditors.TextEdit
 End Class

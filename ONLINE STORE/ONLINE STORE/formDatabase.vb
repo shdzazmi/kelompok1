@@ -38,7 +38,7 @@
             Me.Validate()
             Me.UserBindingSource.EndEdit()
             Me.TableAdapterManager.UpdateAll(Me.OnlinesotreDataSet)
-            MessageBox.Show("data terhapus")
+            MessageBox.Show("Data terhapus")
         End If
     End Sub
 
@@ -64,14 +64,10 @@
         ProdukDataGridView.Enabled = True
     End Sub
 
-    Private Sub hapusProduk_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        If MessageBox.Show("Hapus Data ?", "konfirmasi", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = Windows.Forms.DialogResult.Yes Then
-            ProdukBindingSource.RemoveCurrent()
-
-            Me.Validate()
-            Me.ProdukBindingSource.EndEdit()
-            Me.TableAdapterManager.UpdateAll(Me.OnlinesotreDataSet)
-            MessageBox.Show("data terhapus")
-        End If
+    Private Sub tambahUser_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles tambahUser.Click
+        UserTextEdit.Visible = True
+        PasswordTextEdit.Visible = True
+        NoHapeTextEdit.Visible = True
+        UserBindingSource.AddNew()
     End Sub
 End Class
