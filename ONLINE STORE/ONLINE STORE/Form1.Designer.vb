@@ -22,7 +22,11 @@ Partial Class formStore
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(formStore))
+        Dim TanggalLabel As System.Windows.Forms.Label
+        Dim JumlahLabel As System.Windows.Forms.Label
+        Dim Total_hargaLabel As System.Windows.Forms.Label
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
@@ -46,6 +50,16 @@ Partial Class formStore
         Me.produk = New System.Windows.Forms.PictureBox()
         Me.databaseButton = New System.Windows.Forms.PictureBox()
         Me.minimizeButton = New System.Windows.Forms.PictureBox()
+        Me.PembelianBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.OnlinesotreDataSet = New ONLINE_STORE.onlinesotreDataSet()
+        Me.PembelianTableAdapter = New ONLINE_STORE.onlinesotreDataSetTableAdapters.pembelianTableAdapter()
+        Me.TableAdapterManager = New ONLINE_STORE.onlinesotreDataSetTableAdapters.TableAdapterManager()
+        Me.TanggalDateEdit = New DevExpress.XtraEditors.DateEdit()
+        Me.JumlahTextBox = New System.Windows.Forms.TextBox()
+        Me.Total_hargaTextBox = New System.Windows.Forms.TextBox()
+        TanggalLabel = New System.Windows.Forms.Label()
+        JumlahLabel = New System.Windows.Forms.Label()
+        Total_hargaLabel = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         CType(Me.keranjangButton, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.exitButton, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -55,6 +69,10 @@ Partial Class formStore
         CType(Me.produk, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.databaseButton, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.minimizeButton, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PembelianBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.OnlinesotreDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TanggalDateEdit.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TanggalDateEdit.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label5
@@ -297,12 +315,100 @@ Partial Class formStore
         Me.minimizeButton.TabIndex = 1
         Me.minimizeButton.TabStop = False
         '
+        'PembelianBindingSource
+        '
+        Me.PembelianBindingSource.DataMember = "pembelian"
+        Me.PembelianBindingSource.DataSource = Me.OnlinesotreDataSet
+        '
+        'OnlinesotreDataSet
+        '
+        Me.OnlinesotreDataSet.DataSetName = "onlinesotreDataSet"
+        Me.OnlinesotreDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'PembelianTableAdapter
+        '
+        Me.PembelianTableAdapter.ClearBeforeFill = True
+        '
+        'TableAdapterManager
+        '
+        Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
+        Me.TableAdapterManager.pembelianTableAdapter = Me.PembelianTableAdapter
+        Me.TableAdapterManager.produkTableAdapter = Nothing
+        Me.TableAdapterManager.UpdateOrder = ONLINE_STORE.onlinesotreDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        Me.TableAdapterManager.userTableAdapter = Nothing
+        '
+        'TanggalLabel
+        '
+        TanggalLabel.AutoSize = True
+        TanggalLabel.Enabled = False
+        TanggalLabel.Location = New System.Drawing.Point(728, 128)
+        TanggalLabel.Name = "TanggalLabel"
+        TanggalLabel.Size = New System.Drawing.Size(45, 13)
+        TanggalLabel.TabIndex = 24
+        TanggalLabel.Text = "tanggal:"
+        '
+        'TanggalDateEdit
+        '
+        Me.TanggalDateEdit.DataBindings.Add(New System.Windows.Forms.Binding("EditValue", Me.PembelianBindingSource, "tanggal", True))
+        Me.TanggalDateEdit.EditValue = Nothing
+        Me.TanggalDateEdit.Enabled = False
+        Me.TanggalDateEdit.Location = New System.Drawing.Point(825, 125)
+        Me.TanggalDateEdit.Name = "TanggalDateEdit"
+        Me.TanggalDateEdit.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.TanggalDateEdit.Properties.CalendarTimeProperties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.TanggalDateEdit.Size = New System.Drawing.Size(100, 20)
+        Me.TanggalDateEdit.TabIndex = 25
+        '
+        'JumlahLabel
+        '
+        JumlahLabel.AutoSize = True
+        JumlahLabel.Enabled = False
+        JumlahLabel.Location = New System.Drawing.Point(728, 156)
+        JumlahLabel.Name = "JumlahLabel"
+        JumlahLabel.Size = New System.Drawing.Size(40, 13)
+        JumlahLabel.TabIndex = 36
+        JumlahLabel.Text = "jumlah:"
+        '
+        'JumlahTextBox
+        '
+        Me.JumlahTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.PembelianBindingSource, "jumlah", True))
+        Me.JumlahTextBox.Enabled = False
+        Me.JumlahTextBox.Location = New System.Drawing.Point(825, 153)
+        Me.JumlahTextBox.Name = "JumlahTextBox"
+        Me.JumlahTextBox.Size = New System.Drawing.Size(100, 20)
+        Me.JumlahTextBox.TabIndex = 37
+        '
+        'Total_hargaLabel
+        '
+        Total_hargaLabel.AutoSize = True
+        Total_hargaLabel.Enabled = False
+        Total_hargaLabel.Location = New System.Drawing.Point(728, 182)
+        Total_hargaLabel.Name = "Total_hargaLabel"
+        Total_hargaLabel.Size = New System.Drawing.Size(60, 13)
+        Total_hargaLabel.TabIndex = 38
+        Total_hargaLabel.Text = "total harga:"
+        '
+        'Total_hargaTextBox
+        '
+        Me.Total_hargaTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.PembelianBindingSource, "total_harga", True))
+        Me.Total_hargaTextBox.Enabled = False
+        Me.Total_hargaTextBox.Location = New System.Drawing.Point(825, 179)
+        Me.Total_hargaTextBox.Name = "Total_hargaTextBox"
+        Me.Total_hargaTextBox.Size = New System.Drawing.Size(100, 20)
+        Me.Total_hargaTextBox.TabIndex = 39
+        '
         'formStore
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(920, 513)
+        Me.ClientSize = New System.Drawing.Size(956, 521)
         Me.ControlBox = False
+        Me.Controls.Add(TanggalLabel)
+        Me.Controls.Add(Me.TanggalDateEdit)
+        Me.Controls.Add(JumlahLabel)
+        Me.Controls.Add(Me.JumlahTextBox)
+        Me.Controls.Add(Total_hargaLabel)
+        Me.Controls.Add(Me.Total_hargaTextBox)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.TextBox5)
@@ -335,6 +441,10 @@ Partial Class formStore
         CType(Me.produk, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.databaseButton, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.minimizeButton, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PembelianBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.OnlinesotreDataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TanggalDateEdit.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TanggalDateEdit.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -371,5 +481,12 @@ Partial Class formStore
     Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox5 As System.Windows.Forms.TextBox
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
+    Friend WithEvents OnlinesotreDataSet As ONLINE_STORE.onlinesotreDataSet
+    Friend WithEvents PembelianBindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents PembelianTableAdapter As ONLINE_STORE.onlinesotreDataSetTableAdapters.pembelianTableAdapter
+    Friend WithEvents TableAdapterManager As ONLINE_STORE.onlinesotreDataSetTableAdapters.TableAdapterManager
+    Friend WithEvents TanggalDateEdit As DevExpress.XtraEditors.DateEdit
+    Friend WithEvents JumlahTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents Total_hargaTextBox As System.Windows.Forms.TextBox
 
 End Class

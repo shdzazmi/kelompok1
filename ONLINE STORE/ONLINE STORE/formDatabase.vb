@@ -86,7 +86,9 @@
         Label2.Visible = True
         Label3.Visible = True
         Label4.Visible = True
+
         UserBindingSource.AddNew()
+
     End Sub
 
 End Class

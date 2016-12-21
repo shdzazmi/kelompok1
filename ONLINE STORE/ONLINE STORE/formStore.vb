@@ -1,5 +1,11 @@
-﻿Public Class formStore
+﻿Imports System.Data
+Imports System.Data.SqlClient
+
+Public Class formStore
     Public ImageNum As Integer
+    Public con As New SqlConnection
+    Public cmd As New SqlCommand
+
     Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Me.Enabled = True
         FadeIn()
@@ -208,6 +214,8 @@
     End Sub
 
     Private Sub Form1_Load_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        'TODO: This line of code loads data into the 'OnlinesotreDataSet.pembelian' table. You can move, or remove it, as needed.
+        Me.PembelianTableAdapter.Fill(Me.OnlinesotreDataSet.pembelian)
         Me.Enabled = True
         FadeIn()
     End Sub
@@ -222,6 +230,10 @@
     End Sub
 
     Private Sub tambahkanButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles tambahkanButton.Click
+        'con.Open()
+        'cmd.Connection = con
+        'cmd.CommandText = "INSERT INTO pembelian(tanggal, produk_idproduk, nama, warna, ukuran, harga) VALUES('" & Date.Now & "' , '" & TextBox1.Text & "' ,'" & TextBox2.Text & "' , '" & TextBox5.Text & "' , '" & TextBox4.Text & "' , '" & TextBox3.Text & "' "
+        
         MessageBox.Show("Barang Berhasil Ditambah")
     End Sub
 
@@ -234,6 +246,16 @@
     End Sub
 
     Private Sub TextBox1_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox1.TextChanged
-       
+
+    End Sub
+
+    Private Sub PembelianBindingNavigatorSaveItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+        Me.Validate()
+        Me.PembelianBindingSource.EndEdit()
+        Me.TableAdapterManager.UpdateAll(Me.OnlinesotreDataSet)
+
+    End Sub
+
+    Private Sub IdPembelianTextBox_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs)
     End Sub
 End Class

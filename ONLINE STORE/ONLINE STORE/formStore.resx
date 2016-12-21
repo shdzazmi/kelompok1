@@ -121,12 +121,36 @@
   <data name="nextButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAA3NCSVQICAjb4U/gAAAAAXNSR0IArs4c
-        6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAAOkAAADpAVSSFEsAAAAZdEVYdFNvZnR3YXJlAHd3dy5p
-        bmtzY2FwZS5vcmeb7jwaAAAA+0lEQVRYR8WXOQ4CMQxFcyJKSgrWA8D9G84AU1CEH2SkESKL7W9lJFeZ
-        5L2xk0mScs6pFimlHeKOuLbe87RV4WVQPBvEgnghbh5Q9SN7gwJ8iZRoZuArFykxJCDlOEdkYlggSkIl
-        ECGhFhCJE6scJoGVxNO7RM0CInGEgEvCJcCQcAuIxMGaCYqAR4ImYJWgCojEXlMOusBK4iFLdNvc8nu7
-        oaUd4JKFOQICH/43UEsAuHo50gQs8M98sdT4t48VThEA3LUfuDLghbsyAHg5EwzPdvOp+F9HgVOO6+oS
-        AE49nKoE2HDVHIiADwtMvZhEwrsZmH45hUD49fwN2fjKuShz9LIAAAAASUVORK5CYII=
+        6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAAOcAAADnAfAbWLUAAAAZdEVYdFNvZnR3YXJlAHd3dy5p
+        bmtzY2FwZS5vcmeb7jwaAAAA3klEQVRYR8WXOw7CMBBEcyJKSgq+B4D7N5wBKCjMWLIlFL1A7PVqR3rN
+        I9KMFJTEU0ppEWUn7uJKv48AZUXZiJd4ixtdYwXlN8rFcwTKOZ4jUBLK2WMEyiU8RqD8xegRKP+hnEaN
+        QLmGMuJpHYFyLcrROgJlC9YRKFtRDr0jUPbQOwJlLz0jUFpQ9i0jUFopIx5lxJauqaC0EjqglMfcAiXu
+        T9hTnkHZSm95BmULStyj2FqeQbkGJe51XMpjPkiUuE+y0eUZlIRHeQblHCXuYOJZnkFZUWIPp4rz8TxN
+        H9n4yrnVZRZfAAAAAElFTkSuQmCC
 </value>
   </data>
+  <metadata name="PembelianBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>158, 17</value>
+  </metadata>
+  <metadata name="OnlinesotreDataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="OnlinesotreDataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="PembelianTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>324, 17</value>
+  </metadata>
+  <metadata name="TableAdapterManager.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>486, 17</value>
+  </metadata>
+  <metadata name="TanggalLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="JumlahLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="Total_hargaLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
 </root>
