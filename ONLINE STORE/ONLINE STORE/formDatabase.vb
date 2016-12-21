@@ -89,4 +89,11 @@
         UserBindingSource.AddNew()
     End Sub
 
+    Private Sub refreshUser_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles refreshUser.Click
+        Me.UserTableAdapter.Fill(Me.OnlinesotreDataSet.user)
+    End Sub
+
+    Private Sub refreshProduk_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles refreshProduk.Click
+        Me.ProdukTableAdapter.Fill(Me.OnlinesotreDataSet.produk)
+    End Sub
 End Class

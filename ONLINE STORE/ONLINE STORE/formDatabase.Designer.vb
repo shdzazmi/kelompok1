@@ -49,6 +49,9 @@ Partial Class formDatabase
         Me.simpanProduk = New System.Windows.Forms.Button()
         Me.editProduk = New System.Windows.Forms.Button()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.UserTextEdit = New DevExpress.XtraEditors.TextEdit()
         Me.PasswordTextEdit = New DevExpress.XtraEditors.TextEdit()
         Me.NoHapeTextEdit = New DevExpress.XtraEditors.TextEdit()
@@ -58,9 +61,6 @@ Partial Class formDatabase
         Me.simpanUser = New System.Windows.Forms.Button()
         Me.editUser = New System.Windows.Forms.Button()
         Me.exitButton = New System.Windows.Forms.PictureBox()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
         CType(Me.OnlinesotreDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PembelianBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ProdukBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -280,6 +280,36 @@ Partial Class formDatabase
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "USER"
         '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(230, 264)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(44, 15)
+        Me.Label4.TabIndex = 71
+        Me.Label4.Text = "No. HP"
+        Me.Label4.Visible = False
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(124, 264)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(58, 15)
+        Me.Label3.TabIndex = 70
+        Me.Label3.Text = "Password"
+        Me.Label3.Visible = False
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(18, 264)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(60, 15)
+        Me.Label2.TabIndex = 69
+        Me.Label2.Text = "Username"
+        Me.Label2.Visible = False
+        '
         'UserTextEdit
         '
         Me.UserTextEdit.DataBindings.Add(New System.Windows.Forms.Binding("EditValue", Me.UserBindingSource, "user", True))
@@ -367,36 +397,6 @@ Partial Class formDatabase
         Me.exitButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
         Me.exitButton.TabIndex = 16
         Me.exitButton.TabStop = False
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(18, 264)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(60, 15)
-        Me.Label2.TabIndex = 69
-        Me.Label2.Text = "Username"
-        Me.Label2.Visible = False
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(124, 264)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(58, 15)
-        Me.Label3.TabIndex = 70
-        Me.Label3.Text = "Password"
-        Me.Label3.Visible = False
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(230, 264)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(44, 15)
-        Me.Label4.TabIndex = 71
-        Me.Label4.Text = "No. HP"
-        Me.Label4.Visible = False
         '
         'formDatabase
         '
