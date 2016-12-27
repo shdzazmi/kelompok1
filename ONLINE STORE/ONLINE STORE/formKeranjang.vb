@@ -20,4 +20,12 @@
         Me.PembelianTableAdapter.Fill(Me.OnlinesotreDataSet.pembelian)
 
     End Sub
+
+    Private Sub TextBox7_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox7.TextChanged
+        TextBox8.Text = Val(TextBox3.Text) * Val(TextBox7.Text)
+    End Sub
+
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+
+    End Sub
 End Class

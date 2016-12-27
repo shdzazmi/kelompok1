@@ -3,7 +3,7 @@ Imports System.Data.SqlClient
 
 Public Class formStore
     Public ImageNum As Integer
-    Public con As New SqlConnection
+    Public conn As New SqlConnection
     Public cmd As New SqlCommand
 
     Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs)
@@ -230,10 +230,11 @@ Public Class formStore
     End Sub
 
     Private Sub tambahkanButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles tambahkanButton.Click
-        'con.Open()
-        'cmd.Connection = con
-        'cmd.CommandText = "INSERT INTO pembelian(tanggal, produk_idproduk, nama, warna, ukuran, harga) VALUES('" & Date.Now & "' , '" & TextBox1.Text & "' ,'" & TextBox2.Text & "' , '" & TextBox5.Text & "' , '" & TextBox4.Text & "' , '" & TextBox3.Text & "' "
-        
+        formKeranjang.TextBox1.Text = TextBox1.Text
+        formKeranjang.TextBox2.Text = TextBox2.Text
+        formKeranjang.TextBox3.Text = TextBox3.Text
+        formKeranjang.TextBox4.Text = TextBox4.Text
+        formKeranjang.TextBox5.Text = TextBox5.Text
         MessageBox.Show("Barang Berhasil Ditambah")
     End Sub
 

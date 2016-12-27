@@ -87,6 +87,12 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CHECKOUT.Designer.vb">
+      <DependentUpon>CHECKOUT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CHECKOUT.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form Selamat Datang.Designer.vb">
       <DependentUpon>Form Selamat Datang.vb</DependentUpon>
     </Compile>
@@ -146,6 +152,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="CHECKOUT.resx">
+      <DependentUpon>CHECKOUT.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form Selamat Datang.resx">
       <DependentUpon>Form Selamat Datang.vb</DependentUpon>
     </EmbeddedResource>

@@ -23,10 +23,10 @@ Partial Class formStore
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(formStore))
         Dim TanggalLabel As System.Windows.Forms.Label
         Dim JumlahLabel As System.Windows.Forms.Label
         Dim Total_hargaLabel As System.Windows.Forms.Label
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(formStore))
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
@@ -74,6 +74,36 @@ Partial Class formStore
         CType(Me.TanggalDateEdit.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TanggalDateEdit.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
+        '
+        'TanggalLabel
+        '
+        TanggalLabel.AutoSize = True
+        TanggalLabel.Enabled = False
+        TanggalLabel.Location = New System.Drawing.Point(728, 128)
+        TanggalLabel.Name = "TanggalLabel"
+        TanggalLabel.Size = New System.Drawing.Size(45, 13)
+        TanggalLabel.TabIndex = 24
+        TanggalLabel.Text = "tanggal:"
+        '
+        'JumlahLabel
+        '
+        JumlahLabel.AutoSize = True
+        JumlahLabel.Enabled = False
+        JumlahLabel.Location = New System.Drawing.Point(728, 156)
+        JumlahLabel.Name = "JumlahLabel"
+        JumlahLabel.Size = New System.Drawing.Size(40, 13)
+        JumlahLabel.TabIndex = 36
+        JumlahLabel.Text = "jumlah:"
+        '
+        'Total_hargaLabel
+        '
+        Total_hargaLabel.AutoSize = True
+        Total_hargaLabel.Enabled = False
+        Total_hargaLabel.Location = New System.Drawing.Point(728, 182)
+        Total_hargaLabel.Name = "Total_hargaLabel"
+        Total_hargaLabel.Size = New System.Drawing.Size(60, 13)
+        Total_hargaLabel.TabIndex = 38
+        Total_hargaLabel.Text = "total harga:"
         '
         'Label5
         '
@@ -337,16 +367,6 @@ Partial Class formStore
         Me.TableAdapterManager.UpdateOrder = ONLINE_STORE.onlinesotreDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         Me.TableAdapterManager.userTableAdapter = Nothing
         '
-        'TanggalLabel
-        '
-        TanggalLabel.AutoSize = True
-        TanggalLabel.Enabled = False
-        TanggalLabel.Location = New System.Drawing.Point(728, 128)
-        TanggalLabel.Name = "TanggalLabel"
-        TanggalLabel.Size = New System.Drawing.Size(45, 13)
-        TanggalLabel.TabIndex = 24
-        TanggalLabel.Text = "tanggal:"
-        '
         'TanggalDateEdit
         '
         Me.TanggalDateEdit.DataBindings.Add(New System.Windows.Forms.Binding("EditValue", Me.PembelianBindingSource, "tanggal", True))
@@ -359,16 +379,6 @@ Partial Class formStore
         Me.TanggalDateEdit.Size = New System.Drawing.Size(100, 20)
         Me.TanggalDateEdit.TabIndex = 25
         '
-        'JumlahLabel
-        '
-        JumlahLabel.AutoSize = True
-        JumlahLabel.Enabled = False
-        JumlahLabel.Location = New System.Drawing.Point(728, 156)
-        JumlahLabel.Name = "JumlahLabel"
-        JumlahLabel.Size = New System.Drawing.Size(40, 13)
-        JumlahLabel.TabIndex = 36
-        JumlahLabel.Text = "jumlah:"
-        '
         'JumlahTextBox
         '
         Me.JumlahTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.PembelianBindingSource, "jumlah", True))
@@ -377,16 +387,6 @@ Partial Class formStore
         Me.JumlahTextBox.Name = "JumlahTextBox"
         Me.JumlahTextBox.Size = New System.Drawing.Size(100, 20)
         Me.JumlahTextBox.TabIndex = 37
-        '
-        'Total_hargaLabel
-        '
-        Total_hargaLabel.AutoSize = True
-        Total_hargaLabel.Enabled = False
-        Total_hargaLabel.Location = New System.Drawing.Point(728, 182)
-        Total_hargaLabel.Name = "Total_hargaLabel"
-        Total_hargaLabel.Size = New System.Drawing.Size(60, 13)
-        Total_hargaLabel.TabIndex = 38
-        Total_hargaLabel.Text = "total harga:"
         '
         'Total_hargaTextBox
         '
@@ -431,6 +431,7 @@ Partial Class formStore
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Name = "formStore"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Text = " "
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         CType(Me.keranjangButton, System.ComponentModel.ISupportInitialize).EndInit()
