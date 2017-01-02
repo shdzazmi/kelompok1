@@ -28,4 +28,10 @@
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
         CHECKOUT.ShowDialog()
     End Sub
+
+    Private Sub ButtonBatal2_Click(sender As System.Object, e As System.EventArgs) Handles ButtonBatal2.Click
+        Me.Hide()
+        formStore.Show()
+        formStore.Enabled = True
+    End Sub
 End Class

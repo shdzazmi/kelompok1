@@ -22,6 +22,7 @@ Partial Class Form_Selamat_Datang
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.lanjutButton = New System.Windows.Forms.Button()
@@ -30,6 +31,8 @@ Partial Class Form_Selamat_Datang
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
         Me.SuspendLayout()
         '
         'Label1
@@ -106,6 +109,13 @@ Partial Class Form_Selamat_Datang
         Me.Label6.TabIndex = 7
         Me.Label6.Text = "WA : +2223323242"
         '
+        'Timer1
+        '
+        Me.Timer1.Enabled = True
+        '
+        'Timer2
+        '
+        '
         'Form_Selamat_Datang
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 16.0!)
@@ -139,4 +149,6 @@ Partial Class Form_Selamat_Datang
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents Label6 As System.Windows.Forms.Label
+    Friend WithEvents Timer1 As System.Windows.Forms.Timer
+    Friend WithEvents Timer2 As System.Windows.Forms.Timer
 End Class

@@ -61,6 +61,7 @@ Partial Class formKeranjang
         Me.PembelianTableAdapter = New ONLINE_STORE.onlinesotreDataSetTableAdapters.pembelianTableAdapter()
         Me.TableAdapterManager = New ONLINE_STORE.onlinesotreDataSetTableAdapters.TableAdapterManager()
         Me.UserTableAdapter = New ONLINE_STORE.onlinesotreDataSetTableAdapters.userTableAdapter()
+        Me.ButtonBatal2 = New System.Windows.Forms.Button()
         UserLabel = New System.Windows.Forms.Label()
         PasswordLabel = New System.Windows.Forms.Label()
         Label4 = New System.Windows.Forms.Label()
@@ -243,6 +244,7 @@ Partial Class formKeranjang
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.ButtonBatal2)
         Me.GroupBox1.Controls.Add(Label17)
         Me.GroupBox1.Controls.Add(Me.TextBox8)
         Me.GroupBox1.Controls.Add(Label16)
@@ -453,6 +455,15 @@ Partial Class formKeranjang
         '
         Me.UserTableAdapter.ClearBeforeFill = True
         '
+        'ButtonBatal2
+        '
+        Me.ButtonBatal2.Location = New System.Drawing.Point(575, 294)
+        Me.ButtonBatal2.Name = "ButtonBatal2"
+        Me.ButtonBatal2.Size = New System.Drawing.Size(75, 23)
+        Me.ButtonBatal2.TabIndex = 48
+        Me.ButtonBatal2.Text = "Batal"
+        Me.ButtonBatal2.UseVisualStyleBackColor = True
+        '
         'formKeranjang
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -505,4 +516,5 @@ Partial Class formKeranjang
     Friend WithEvents TextBox5 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox8 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox7 As System.Windows.Forms.TextBox
+    Friend WithEvents ButtonBatal2 As System.Windows.Forms.Button
 End Class

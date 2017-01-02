@@ -24,4 +24,23 @@
 
     End Sub
 
+    Private Sub Label1_Click(sender As System.Object, e As System.EventArgs) Handles Label1.Click
+
+    End Sub
+
+    Private Sub Timer1_Tick_1(sender As System.Object, e As System.EventArgs) Handles Timer1.Tick
+        Label1.Left = Label1.Left + 10
+        If Label1.Left >= Me.Width - Label1.Width Then
+            Timer2.Enabled = True
+            Timer1.Enabled = False
+        End If
+    End Sub
+
+    Private Sub Timer2_Tick(sender As System.Object, e As System.EventArgs) Handles Timer2.Tick
+        Label1.Left = Label1.Left - 10
+        If Label1.Left <= 0 Then
+            Timer1.Enabled = True
+            Timer2.Enabled = False
+        End If
+    End Sub
 End Class
