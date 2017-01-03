@@ -275,7 +275,7 @@ Partial Class formStore
         '
         Me.exitButton.Cursor = System.Windows.Forms.Cursors.Hand
         Me.exitButton.Image = Global.ONLINE_STORE.My.Resources.Resource1.cancel
-        Me.exitButton.Location = New System.Drawing.Point(876, 12)
+        Me.exitButton.Location = New System.Drawing.Point(893, 12)
         Me.exitButton.Name = "exitButton"
         Me.exitButton.Size = New System.Drawing.Size(32, 32)
         Me.exitButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
