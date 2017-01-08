@@ -129,6 +129,7 @@ Partial Class CHECKOUT
         Me.Controls.Add(Me.Label1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Name = "CHECKOUT"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = " "
         Me.ResumeLayout(False)
         Me.PerformLayout()

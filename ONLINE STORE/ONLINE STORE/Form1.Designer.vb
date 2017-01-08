@@ -84,6 +84,7 @@ Partial Class formStore
         TanggalLabel.Size = New System.Drawing.Size(45, 13)
         TanggalLabel.TabIndex = 24
         TanggalLabel.Text = "tanggal:"
+        TanggalLabel.Visible = False
         '
         'JumlahLabel
         '
@@ -94,6 +95,7 @@ Partial Class formStore
         JumlahLabel.Size = New System.Drawing.Size(40, 13)
         JumlahLabel.TabIndex = 36
         JumlahLabel.Text = "jumlah:"
+        JumlahLabel.Visible = False
         '
         'Total_hargaLabel
         '
@@ -104,6 +106,7 @@ Partial Class formStore
         Total_hargaLabel.Size = New System.Drawing.Size(60, 13)
         Total_hargaLabel.TabIndex = 38
         Total_hargaLabel.Text = "total harga:"
+        Total_hargaLabel.Visible = False
         '
         'Label5
         '
@@ -272,7 +275,7 @@ Partial Class formStore
         '
         Me.exitButton.Cursor = System.Windows.Forms.Cursors.Hand
         Me.exitButton.Image = Global.ONLINE_STORE.My.Resources.Resource1.cancel
-        Me.exitButton.Location = New System.Drawing.Point(876, 12)
+        Me.exitButton.Location = New System.Drawing.Point(893, 12)
         Me.exitButton.Name = "exitButton"
         Me.exitButton.Size = New System.Drawing.Size(32, 32)
         Me.exitButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -378,6 +381,7 @@ Partial Class formStore
         Me.TanggalDateEdit.Properties.CalendarTimeProperties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
         Me.TanggalDateEdit.Size = New System.Drawing.Size(100, 20)
         Me.TanggalDateEdit.TabIndex = 25
+        Me.TanggalDateEdit.Visible = False
         '
         'JumlahTextBox
         '
@@ -387,6 +391,7 @@ Partial Class formStore
         Me.JumlahTextBox.Name = "JumlahTextBox"
         Me.JumlahTextBox.Size = New System.Drawing.Size(100, 20)
         Me.JumlahTextBox.TabIndex = 37
+        Me.JumlahTextBox.Visible = False
         '
         'Total_hargaTextBox
         '
@@ -396,6 +401,7 @@ Partial Class formStore
         Me.Total_hargaTextBox.Name = "Total_hargaTextBox"
         Me.Total_hargaTextBox.Size = New System.Drawing.Size(100, 20)
         Me.Total_hargaTextBox.TabIndex = 39
+        Me.Total_hargaTextBox.Visible = False
         '
         'formStore
         '
